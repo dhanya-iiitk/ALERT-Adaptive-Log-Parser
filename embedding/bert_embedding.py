@@ -1,123 +1,85 @@
-import pandas as pd
+"""
+embedding/bert_embedding.py
+======================
+Step 6: Generate BERT embeddings for unique log messages.
+Returns L2-normalised mean-pool vectors + optional attention weights.
+"""
+
 import numpy as np
-import torch
+from typing import List, Tuple, Optional
+import warnings
+warnings.filterwarnings("ignore")
 
-from transformers import BertTokenizer, BertModel
+try:
+    import torch
+    from transformers import BertTokenizer, BertModel
+    BERT_AVAILABLE = True
+except ImportError:
+    BERT_AVAILABLE = False
 
 
-class BertEmbedder:
+def generate_embeddings(
+    logs:              List[str],
+    bert_model:        str  = "bert-base-uncased",
+    max_length:        int  = 128,
+    batch_size:        int  = 32,
+    return_attentions: bool = False,
+) -> Tuple[np.ndarray, Optional[List]]:
+    """
+    Generate BERT embeddings for a list of log strings.
 
-    def __init__(self,
-                 model_name='bert-base-uncased',
-                 max_length=64):
+    Parameters
+    ----------
+    logs              : list of normalised log strings
+    bert_model        : HuggingFace model name
+    max_length        : max BERT token length
+    batch_size        : inference batch size
+    return_attentions : return per-log attention tensors
 
-        print("[INFO] Loading BERT model...")
+    Returns
+    -------
+    embeddings  : np.ndarray  (N, 768)  L2-normalised
+    attentions  : list of tensors or None
+    """
+    if not BERT_AVAILABLE:
+        raise ImportError("torch and transformers are required.")
 
-        self.tokenizer = BertTokenizer.from_pretrained(model_name)
-        self.model = BertModel.from_pretrained(model_name)
+    device    = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    tokenizer = BertTokenizer.from_pretrained(bert_model)
+    model     = BertModel.from_pretrained(bert_model, output_attentions=return_attentions)
+    model.to(device)
+    model.eval()
+    print(f"[Embedding] BERT loaded on {device} | {len(logs)} logs")
 
-        self.max_length = max_length
+    n          = len(logs)
+    embeddings = np.zeros((n, 768), dtype=np.float32)
+    all_atts   = [] if return_attentions else None
 
-        # evaluation mode
-        self.model.eval()
+    from tqdm import tqdm
+    for i in tqdm(range(0, n, batch_size), desc="Encoding"):
+        batch = logs[i: i + batch_size]
+        enc   = tokenizer.batch_encode_plus(
+            list(batch), add_special_tokens=True,
+            max_length=max_length, padding="max_length",
+            truncation=True, return_attention_mask=True, return_tensors="pt")
+        ids   = enc["input_ids"].to(device)
+        mask  = enc["attention_mask"].to(device)
 
-        print("[INFO] BERT loaded successfully.")
-
-    # --------------------------------------------------------
-    # Generate embedding for one log message
-    # --------------------------------------------------------
-    def get_embedding(self, log_message):
-
-        # Tokenize input log
-        inputs = self.tokenizer(
-            log_message,
-            return_tensors='pt',
-            truncation=True,
-            padding='max_length',
-            max_length=self.max_length
-        )
-
-        # Disable gradient computation
         with torch.no_grad():
+            out  = model(input_ids=ids, attention_mask=mask)
+            toks = out.last_hidden_state
+            mexp = mask.unsqueeze(-1).float()
+            emb  = (toks * mexp).sum(1) / mexp.sum(1).clamp(min=1e-9)
 
-            outputs = self.model(**inputs)
+        embeddings[i: i + len(batch)] = emb.cpu().numpy()
 
-        # Last hidden states
-        token_embeddings = outputs.last_hidden_state
+        if return_attentions and out.attentions:
+            stacked = torch.stack(out.attentions, dim=0)
+            for b in range(len(batch)):
+                all_atts.append(stacked[:, b, :, :, :].cpu())
 
-        # Shape:
-        # [1, seq_len, 768]
-
-        # Sum pooling
-        log_vector = torch.sum(token_embeddings, dim=1)
-
-        # Convert tensor to numpy
-        log_vector = log_vector.squeeze().numpy()
-
-        return log_vector
-
-    # --------------------------------------------------------
-    # Generate embeddings for all logs
-    # --------------------------------------------------------
-    def generate_embeddings(self, input_csv):
-
-        df = pd.read_csv(input_csv)
-
-        logs = df["ProcessedLog"].tolist()
-
-        embeddings = []
-
-        print(f"[INFO] Generating embeddings for {len(logs)} logs...\n")
-
-        for idx, log in enumerate(logs):
-
-            vector = self.get_embedding(log)
-
-            embeddings.append(vector)
-
-            if (idx + 1) % 10 == 0:
-                print(f"[INFO] Processed {idx + 1}/{len(logs)} logs")
-
-        embeddings = np.array(embeddings)
-
-        print("\n[INFO] Embedding generation completed.")
-        print(f"[INFO] Embedding shape: {embeddings.shape}")
-
-        return logs, embeddings
-
-    # --------------------------------------------------------
-    # Save embeddings
-    # --------------------------------------------------------
-    def save_embeddings(self,
-                        embeddings,
-                        output_file):
-
-        np.save(output_file, embeddings)
-
-        print(f"[INFO] Saved embeddings to: {output_file}")
-
-
-# ------------------------------------------------------------
-# Main
-# ------------------------------------------------------------
-if __name__ == "__main__":
-
-    input_csv = "datasets/HDFS/HDFS_processed.csv"
-
-    output_file = "datasets/HDFS/HDFS_embeddings.npy"
-
-    embedder = BertEmbedder()
-
-    logs, embeddings = embedder.generate_embeddings(input_csv)
-
-    embedder.save_embeddings(
-        embeddings,
-        output_file
-    )
-
-    # Example output
-    print("\nExample Log:")
-    print(logs[0])
-
-    print("\nEmbedding Vector Shape:")
-    print(embeddings[0].shape)
+    # L2 normalise
+    norms      = np.linalg.norm(embeddings, axis=1, keepdims=True)
+    embeddings = embeddings / (norms + 1e-8)
+    print(f"[Embedding] Done. Shape: {embeddings.shape}")
+    return embeddings, all_atts
