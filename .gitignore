@@ -1,0 +1,14 @@
+# Raw log files (too large for GitHub)
+datasets/**/*.log
+datasets/**/*.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Results (generated files)
+results/*.csv
+results/*.json
+repository/*.json
+repository/*.npy
