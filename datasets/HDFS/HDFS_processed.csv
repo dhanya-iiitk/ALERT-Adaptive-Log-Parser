@@ -1,0 +1,193 @@
+ProcessedLog
+PacketResponder <*> for block <*> terminating
+BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>
+Received block <*> of size <*> from /<*>
+Receiving block <*> src: /<*> dest: /<*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811092030_0001_m_000590_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811092030_0001_m_000742_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811092030_0001_m_000487_0/part-<*>. <*>
+Verification succeeded for <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811092030_0001_m_001648_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811092030_0001_m_001866_0/part-<*>. <*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir5/<*>
+<*> Served block <*> to /<*>
+<*>:Got exception while serving <*> to /<*>:
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand/_temporary/_task_200811092030_0002_r_000296_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand/_temporary/_task_200811092030_0002_r_000230_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand/_temporary/_task_200811092030_0002_r_000169_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand/_temporary/_task_200811092030_0002_r_000318_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand/_temporary/_task_200811092030_0002_r_000138_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_000382_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_000392_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_000675_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_000705_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001095_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001365_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001506_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001597_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001377_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001728_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001661_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001630_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001817_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001840_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt/_temporary/_task_200811092030_0003_m_001976_0/part-<*>. <*>
+BLOCK* NameSystem.delete: <*> is added to invalidSet of <*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir51/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir18/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir27/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir29/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir9/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir32/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir41/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir11/<*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_000206_0/part-<*>. <*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir1/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir25/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir42/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir26/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir33/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir60/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir20/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir34/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir6/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir39/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir57/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir38/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir0/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir48/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir23/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir13/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir30/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir47/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir21/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir4/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir53/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir37/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir40/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir50/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir16/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir15/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir24/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir12/<*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_000097_0/part-<*>. <*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir7/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir45/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir59/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir14/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir28/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir46/<*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_000056_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_000346_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_000121_0/part-<*>. <*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir56/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir55/<*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_000749_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_001197_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_001353_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_001495_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand/_temporary/_task_200811101024_0001_m_001587_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt2/_temporary/_task_200811101024_0002_m_000299_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt2/_temporary/_task_200811101024_0002_m_000054_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt2/_temporary/_task_200811101024_0002_m_001080_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt2/_temporary/_task_200811101024_0002_m_000809_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt2/_temporary/_task_200811101024_0002_m_001335_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt2/_temporary/_task_200811101024_0002_m_001968_1/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000258_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000257_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000210_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000116_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000315_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000152_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/sortrand2/_temporary/_task_200811101024_0003_r_000344_0/part-<*>. <*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir2/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir8/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir22/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir61/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir35/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir31/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir52/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir10/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir19/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir54/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir63/<*>
+<*> Starting thread to transfer block <*> to <*>
+BLOCK* ask <*> to delete <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand3/_temporary/_task_200811101024_0005_m_000720_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand3/_temporary/_task_200811101024_0005_m_001091_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand3/_temporary/_task_200811101024_0005_m_001655_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand3/_temporary/_task_200811101024_0005_m_001824_0/part-<*>. <*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir36/<*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_000190_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_000374_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_000186_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_000585_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_001560_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_001230_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt3/_temporary/_task_200811101024_0007_m_001662_0/part-<*>. <*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir62/<*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_000115_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_000176_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001061_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001281_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001398_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001611_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand4/_temporary/_task_200811101024_0009_m_001574_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt4/_temporary/_task_200811101024_0010_m_000222_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt4/_temporary/_task_200811101024_0010_m_000881_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt4/_temporary/_task_200811101024_0010_m_001716_0/part-<*>. <*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir49/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir58/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir44/<*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_000040_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_000541_0/part-<*>. <*>
+Received block <*> src: /<*> dest: /<*> of size <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_001408_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand5/_temporary/_task_200811101024_0011_m_001730_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001192_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_000900_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001314_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001529_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001726_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001554_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001709_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt5/_temporary/_task_200811101024_0012_m_001635_0/part-<*>. <*>
+BLOCK* ask <*> to delete <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir3/<*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir17/<*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000153_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000197_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000451_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000079_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000077_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000523_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_000997_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_001195_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_001850_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_001835_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_001983_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand6/_temporary/_task_200811101024_0013_m_002009_1/part-<*>. <*>
+Deleting block <*> file /mnt/hadoop/dfs/data/current/subdir43/<*>
+BLOCK* ask <*> to replicate <*> to datanode(s) <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001049_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_000973_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001348_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001394_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001736_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001649_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001940_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_001642_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand7/_temporary/_task_200811101024_0014_m_002007_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_000480_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_000737_0/part-<*>. <*>
+BLOCK* ask <*> to delete <*> <*> <*> <*> <*> <*> <*> <*> <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_000882_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001033_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_000939_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001294_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001425_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001757_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001473_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/rand8/_temporary/_task_200811101024_0015_m_001860_0/part-<*>. <*>
+BLOCK* NameSystem.allocateBlock: /user/root/randtxt9/_temporary/_task_200811101024_0016_m_000347_0/part-<*>. <*>
