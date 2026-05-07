@@ -7,8 +7,6 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Results (generated files)
-results/*.csv
-results/*.json
+# Large generated files
 repository/*.json
 repository/*.npy
