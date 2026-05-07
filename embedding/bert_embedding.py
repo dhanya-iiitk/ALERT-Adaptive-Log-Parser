@@ -10,12 +10,9 @@ from typing import List, Tuple, Optional
 import warnings
 warnings.filterwarnings("ignore")
 
-try:
-    import torch
-    from transformers import BertTokenizer, BertModel
-    BERT_AVAILABLE = True
-except ImportError:
-    BERT_AVAILABLE = False
+import torch
+from transformers import BertTokenizer, BertModel
+BERT_AVAILABLE = True
 
 
 def generate_embeddings(
