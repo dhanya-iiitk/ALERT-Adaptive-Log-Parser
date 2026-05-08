@@ -67,17 +67,26 @@ def first_keyword(log: str) -> str:
 # ── Two-stage clustering ──────────────────────────────────────────────────────
 
 def two_stage_cluster(embeddings: np.ndarray, unique_logs: List[str],
-                      dist: float) -> np.ndarray:
+                      dist: float, dataset: str = "") -> np.ndarray:
     from sklearn.cluster import AgglomerativeClustering
 
     n             = len(unique_logs)
     global_labels = np.full(n, -1, dtype=int)
     next_label    = 0
 
-    # Stage 1: group by first keyword
+    # Stage 1: group by first keyword (dataset-specific delimiter support)
     kw_groups = defaultdict(list)
     for i, log in enumerate(unique_logs):
-        kw_groups[first_keyword(log)].append(i)
+        # HealthApp uses | delimiter - group by component name
+        if dataset.lower() == "healthapp" and "|" in log:
+            kw = log.split("|")[0].strip().lower()
+        # OpenSSH - group by first two keywords for finer discrimination
+        elif dataset.lower() == "openssh":
+            toks = [t for t in log.split() if not (t.startswith("<") and t.endswith(">"))]
+            kw = " ".join(toks[:2]).lower() if len(toks) >= 2 else first_keyword(log)
+        else:
+            kw = first_keyword(log)
+        kw_groups[kw].append(i)
 
     print(f"  Stage 1: {len(kw_groups)} keyword groups")
 
@@ -272,7 +281,7 @@ def build_store_for_dataset(dataset: str, data_dir: str = "datasets",
 
     # Step 7: Two-stage clustering
     dist, tau = DATASET_PARAMS.get(dataset, (0.70, 0.50))
-    labels    = two_stage_cluster(embeddings, unique_logs, dist)
+    labels    = two_stage_cluster(embeddings, unique_logs, dist, dataset=dataset)
 
     # Step 8: Template extraction
     templates_map = extract_templates(unique_logs, raw_contents, labels, tau)
