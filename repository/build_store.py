@@ -35,22 +35,22 @@ from preprocessing.preprocess import DATASET_CONFIG
 
 DATASET_PARAMS = {
     #  dataset         dist    tau
-    "HDFS":        (0.700,  0.10),
-    "Hadoop":      (0.650,  0.10),
-    "Spark":       (0.970,  0.85),
-    "Zookeeper":   (0.640,  0.90),
-    "BGL":         (0.820,  0.70),
-    "HPC":         (0.990,  0.80),
-    "Thunderbird": (0.790,  0.61),
-    "Windows":     (0.600,  0.70),
-    "Linux":       (0.350,  0.65),
-    "Android":     (0.420,  0.80),
-    "HealthApp":   (0.870,  0.10),
-    "Apache":      (0.960,  0.70),
-    "Proxifier":   (0.750,  0.70),
-    "OpenSSH":     (0.995,  0.75),
-    "OpenStack":   (0.990,  0.90),
-    "Mac":         (0.569,  0.78),
+    "HDFS":        (0.700,  0.10,  None),
+    "Hadoop":      (0.650,  0.10,  None),
+    "Spark":       (0.970,  0.85,  36),
+    "Zookeeper":   (0.640,  0.90,  None),
+    "BGL":         (0.820,  0.70,  None),
+    "HPC":         (0.990,  0.80,  None),
+    "Thunderbird": (0.790,  0.61,  149),
+    "Windows":     (0.600,  0.70,  50),
+    "Linux":       (0.350,  0.65,  72),
+    "Android":     (0.420,  0.80,  None),
+    "HealthApp":   (0.870,  0.10,  75),
+    "Apache":      (0.960,  0.70,  6),
+    "Proxifier":   (0.750,  0.70,  None),
+    "OpenSSH":     (0.995,  0.75,  15),
+    "OpenStack":   (0.990,  0.90,  None),
+    "Mac":         (0.569,  0.78,  None),
 }
 
 
