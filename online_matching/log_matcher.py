@@ -121,7 +121,7 @@ class LogMatcher:
         self,
         dataset:         str,
         store_dir:       str   = "repository",
-        bert_model:      str   = "bert-base-uncased",
+        bert_model:      str   = "all-MiniLM-L6-v2",
         top_k:           int   = 3,
         exact_thr:       float = 0.99,
         partial_thr:     float = 0.80,
@@ -150,15 +150,9 @@ class LogMatcher:
         self._fmt_re  = self._compile_format(cfg["log_format"])
 
         # Load BERT
-        import torch
-        from transformers import BertTokenizer, BertModel
-        self._device    = torch.device(
-            "cuda" if torch.cuda.is_available() else "cpu")
-        self._tokenizer = BertTokenizer.from_pretrained(bert_model)
-        self._model     = BertModel.from_pretrained(bert_model)
-        self._model.to(self._device)
-        self._model.eval()
-        print(f"[{dataset}] BERT on {self._device} | "
+        from sentence_transformers import SentenceTransformer
+        self._sbert = SentenceTransformer(bert_model)
+        print(f"[{dataset}] SBERT loaded | "
               f"Store: {len(self.store)} templates")
 
         # Module 3 — entropy-adaptive threshold
@@ -372,20 +366,9 @@ class LogMatcher:
     # ── Embedding (Step 7.3) ──────────────────────────────────────────
 
     def _embed(self, log: str) -> np.ndarray:
-        import torch
-        enc  = self._tokenizer.encode_plus(
-            log, add_special_tokens=True, max_length=128,
-            padding="max_length", truncation=True,
-            return_attention_mask=True, return_tensors="pt")
-        ids  = enc["input_ids"].to(self._device)
-        mask = enc["attention_mask"].to(self._device)
-        with torch.no_grad():
-            out  = self._model(input_ids=ids, attention_mask=mask)
-            toks = out.last_hidden_state
-            mexp = mask.unsqueeze(-1).float()
-            emb  = (toks * mexp).sum(1) / mexp.sum(1).clamp(min=1e-9)
-        v = emb.squeeze(0).cpu().numpy().astype(np.float32)
-        return v / (np.linalg.norm(v) + 1e-8)
+        v = self._sbert.encode(
+            [log], convert_to_numpy=True, normalize_embeddings=True)[0]
+        return v.astype(np.float32)
 
     # ── Template extraction for new logs ──────────────────────────────
 
