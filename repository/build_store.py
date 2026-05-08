@@ -67,7 +67,7 @@ def first_keyword(log: str) -> str:
 # ── Two-stage clustering ──────────────────────────────────────────────────────
 
 def two_stage_cluster(embeddings: np.ndarray, unique_logs: List[str],
-                      dist: float, dataset: str = "") -> np.ndarray:
+                      dist: float, dataset: str = "", n_clusters: int = None) -> np.ndarray:
     from sklearn.cluster import AgglomerativeClustering
 
     n             = len(unique_logs)
@@ -89,6 +89,20 @@ def two_stage_cluster(embeddings: np.ndarray, unique_logs: List[str],
         kw_groups[kw].append(i)
 
     print(f"  Stage 1: {len(kw_groups)} keyword groups")
+
+    # If n_clusters specified, use it directly on full embedding set
+    if n_clusters is not None and n_clusters > 0:
+        from sklearn.cluster import AgglomerativeClustering
+        print(f"  Using exact n_clusters={n_clusters}")
+        labels = AgglomerativeClustering(
+            n_clusters=n_clusters,
+            metric="euclidean",
+            linkage="average"
+        ).fit_predict(embeddings)
+        n_cl  = len(set(labels))
+        sizes = Counter(labels.tolist())
+        print(f"  Exact clustering: {n_cl} clusters  max={max(sizes.values())}  avg={np.mean(list(sizes.values())):.1f}")
+        return labels
 
     # Stage 2: BERT clustering within each group
     for kw, indices in kw_groups.items():
@@ -280,8 +294,8 @@ def build_store_for_dataset(dataset: str, data_dir: str = "datasets",
     print(f"  Embeddings shape: {embeddings.shape}")
 
     # Step 7: Two-stage clustering
-    dist, tau = DATASET_PARAMS.get(dataset, (0.70, 0.50))
-    labels    = two_stage_cluster(embeddings, unique_logs, dist, dataset=dataset)
+    dist, tau, n_clusters = DATASET_PARAMS.get(dataset, (0.70, 0.50, None))
+    labels    = two_stage_cluster(embeddings, unique_logs, dist, dataset=dataset, n_clusters=n_clusters)
 
     # Step 8: Template extraction
     templates_map = extract_templates(unique_logs, raw_contents, labels, tau)
