@@ -10,9 +10,8 @@ datasets/**/*_processed.csv
 __pycache__/
 *.pyc
 *.pyo
+*.swp
 
 # Large generated files
 repository/*.json
 repository/*.npy
-results/*.csv
-results/*.json

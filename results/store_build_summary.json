@@ -1,0 +1,11 @@
+{
+  "OpenStack": {
+    "dataset": "OpenStack",
+    "total_logs": 2000,
+    "unique_logs": 533,
+    "n_templates": 158,
+    "threshold": 0.99,
+    "tau_r": 0.9,
+    "store_path": "repository/OpenStack_template_store.json"
+  }
+}
