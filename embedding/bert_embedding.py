@@ -1,82 +1,72 @@
 """
 embedding/bert_embedding.py
-======================
-Step 6: Generate BERT embeddings for unique log messages.
-Returns L2-normalised mean-pool vectors + optional attention weights.
+============================
+Step 6: Generate SBERT embeddings for unique log messages.
+
+Uses sentence-transformers (SBERT) instead of raw BERT because:
+- Designed specifically for semantic similarity tasks
+- No manual mean-pooling needed
+- Better clustering results
+- Faster inference
+
+Model used: all-MiniLM-L6-v2 (fast, strong performance)
+Alternative: all-mpnet-base-v2 (slower, slightly better)
 """
 
 import numpy as np
 from typing import List, Tuple, Optional
-import warnings
-warnings.filterwarnings("ignore")
+from tqdm import tqdm
 
-import torch
-from transformers import BertTokenizer, BertModel
-BERT_AVAILABLE = True
+try:
+    from sentence_transformers import SentenceTransformer
+    SBERT_AVAILABLE = True
+except ImportError:
+    SBERT_AVAILABLE = False
 
 
 def generate_embeddings(
     logs:              List[str],
-    bert_model:        str  = "bert-base-uncased",
+    bert_model:        str  = "all-MiniLM-L6-v2",
     max_length:        int  = 128,
-    batch_size:        int  = 32,
+    batch_size:        int  = 64,
     return_attentions: bool = False,
 ) -> Tuple[np.ndarray, Optional[List]]:
     """
-    Generate BERT embeddings for a list of log strings.
+    Generate SBERT embeddings for a list of log strings.
 
     Parameters
     ----------
     logs              : list of normalised log strings
-    bert_model        : HuggingFace model name
-    max_length        : max BERT token length
+    bert_model        : SBERT model name
+                        'all-MiniLM-L6-v2'  — fast, good quality
+                        'all-mpnet-base-v2' — slower, best quality
+    max_length        : max token length (ignored by SBERT, kept for compat)
     batch_size        : inference batch size
-    return_attentions : return per-log attention tensors
+    return_attentions : kept for API compatibility (SBERT has no attentions)
 
     Returns
     -------
-    embeddings  : np.ndarray  (N, 768)  L2-normalised
-    attentions  : list of tensors or None
+    embeddings  : np.ndarray  (N, embedding_dim)  L2-normalised
+    attentions  : None  (SBERT does not expose attention weights)
     """
-    if not BERT_AVAILABLE:
-        raise ImportError("torch and transformers are required.")
+    if not SBERT_AVAILABLE:
+        raise ImportError(
+            "sentence-transformers not installed.\n"
+            "Run: pip3 install sentence-transformers")
 
-    device    = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    tokenizer = BertTokenizer.from_pretrained(bert_model)
-    model     = BertModel.from_pretrained(bert_model, output_attentions=return_attentions)
-    model.to(device)
-    model.eval()
-    print(f"[Embedding] BERT loaded on {device} | {len(logs)} logs")
+    print(f"[Embedding] Loading SBERT model: {bert_model}")
+    model = SentenceTransformer(bert_model)
+    print(f"[Embedding] Encoding {len(logs)} logs ...")
 
-    n          = len(logs)
-    embeddings = np.zeros((n, 768), dtype=np.float32)
-    all_atts   = [] if return_attentions else None
+    embeddings = model.encode(
+        logs,
+        batch_size=batch_size,
+        show_progress_bar=True,
+        convert_to_numpy=True,
+        normalize_embeddings=True,   # L2-normalise built-in
+    )
 
-    from tqdm import tqdm
-    for i in tqdm(range(0, n, batch_size), desc="Encoding"):
-        batch = logs[i: i + batch_size]
-        enc   = tokenizer.batch_encode_plus(
-            list(batch), add_special_tokens=True,
-            max_length=max_length, padding="max_length",
-            truncation=True, return_attention_mask=True, return_tensors="pt")
-        ids   = enc["input_ids"].to(device)
-        mask  = enc["attention_mask"].to(device)
-
-        with torch.no_grad():
-            out  = model(input_ids=ids, attention_mask=mask)
-            toks = out.last_hidden_state
-            mexp = mask.unsqueeze(-1).float()
-            emb  = (toks * mexp).sum(1) / mexp.sum(1).clamp(min=1e-9)
-
-        embeddings[i: i + len(batch)] = emb.cpu().numpy()
-
-        if return_attentions and out.attentions:
-            stacked = torch.stack(out.attentions, dim=0)
-            for b in range(len(batch)):
-                all_atts.append(stacked[:, b, :, :, :].cpu())
-
-    # L2 normalise
-    norms      = np.linalg.norm(embeddings, axis=1, keepdims=True)
-    embeddings = embeddings / (norms + 1e-8)
     print(f"[Embedding] Done. Shape: {embeddings.shape}")
-    return embeddings, all_atts
+
+    # return_attentions=False always for SBERT
+    return embeddings, None
