@@ -1,0 +1,21 @@
+{
+  "dataset": "Windows",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 419,
+    "partial": 181,
+    "fuzzy": 0,
+    "new": 0
+  },
+  "retrieval_accuracy": 1.0,
+  "exact_rate": 0.6983,
+  "partial_rate": 0.3017,
+  "fuzzy_rate": 0.0,
+  "new_template_rate": 0.0,
+  "new_templates_discovered": 0,
+  "final_store_size": 50,
+  "avg_latency_ms": 40.618,
+  "p95_latency_ms": 93.024,
+  "throughput_logs_per_sec": 24.6,
+  "avg_top1_score": 0.9914
+}

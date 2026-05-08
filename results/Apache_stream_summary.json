@@ -1,0 +1,21 @@
+{
+  "dataset": "Apache",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 333,
+    "partial": 267,
+    "fuzzy": 0,
+    "new": 0
+  },
+  "retrieval_accuracy": 1.0,
+  "exact_rate": 0.555,
+  "partial_rate": 0.445,
+  "fuzzy_rate": 0.0,
+  "new_template_rate": 0.0,
+  "new_templates_discovered": 0,
+  "final_store_size": 6,
+  "avg_latency_ms": 32.875,
+  "p95_latency_ms": 87.531,
+  "throughput_logs_per_sec": 30.4,
+  "avg_top1_score": 0.9888
+}

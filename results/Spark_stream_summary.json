@@ -1,0 +1,21 @@
+{
+  "dataset": "Spark",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 3,
+    "partial": 597,
+    "fuzzy": 0,
+    "new": 0
+  },
+  "retrieval_accuracy": 1.0,
+  "exact_rate": 0.005,
+  "partial_rate": 0.995,
+  "fuzzy_rate": 0.0,
+  "new_template_rate": 0.0,
+  "new_templates_discovered": 0,
+  "final_store_size": 33,
+  "avg_latency_ms": 36.606,
+  "p95_latency_ms": 92.663,
+  "throughput_logs_per_sec": 27.3,
+  "avg_top1_score": 0.9555
+}

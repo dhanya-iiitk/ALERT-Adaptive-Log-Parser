@@ -1,0 +1,21 @@
+{
+  "dataset": "OpenStack",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 463,
+    "partial": 137,
+    "fuzzy": 0,
+    "new": 0
+  },
+  "retrieval_accuracy": 1.0,
+  "exact_rate": 0.7717,
+  "partial_rate": 0.2283,
+  "fuzzy_rate": 0.0,
+  "new_template_rate": 0.0,
+  "new_templates_discovered": 0,
+  "final_store_size": 150,
+  "avg_latency_ms": 73.075,
+  "p95_latency_ms": 115.262,
+  "throughput_logs_per_sec": 13.7,
+  "avg_top1_score": 0.9893
+}
