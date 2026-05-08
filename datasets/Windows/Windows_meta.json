@@ -1,0 +1,12 @@
+{
+  "dataset": "Windows",
+  "total_logs": 2000,
+  "offline_logs": 1400,
+  "online_logs": 600,
+  "unique_offline": 669,
+  "split_ratio": 0.7,
+  "offline_file": "datasets/Windows/Windows_offline.csv",
+  "online_file": "datasets/Windows/Windows_online.csv",
+  "log_format": "<Date> <Time>, <Level>                  <Component>    <Content>",
+  "regex_count": 1
+}

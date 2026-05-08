@@ -1,0 +1,12 @@
+{
+  "dataset": "Android",
+  "total_logs": 2000,
+  "offline_logs": 1400,
+  "online_logs": 600,
+  "unique_offline": 209,
+  "split_ratio": 0.7,
+  "offline_file": "datasets/Android/Android_offline.csv",
+  "online_file": "datasets/Android/Android_online.csv",
+  "log_format": "<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>",
+  "regex_count": 3
+}

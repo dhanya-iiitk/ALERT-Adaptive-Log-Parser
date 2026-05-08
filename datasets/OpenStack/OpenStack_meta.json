@@ -1,0 +1,12 @@
+{
+  "dataset": "OpenStack",
+  "total_logs": 2000,
+  "offline_logs": 1400,
+  "online_logs": 600,
+  "unique_offline": 382,
+  "split_ratio": 0.7,
+  "offline_file": "datasets/OpenStack/OpenStack_offline.csv",
+  "online_file": "datasets/OpenStack/OpenStack_online.csv",
+  "log_format": "<Logrecord> <Date> <Time> <Pid> <Level> <Component> \\[<ADDR>\\] <Content>",
+  "regex_count": 3
+}

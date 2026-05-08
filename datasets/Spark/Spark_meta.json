@@ -1,0 +1,12 @@
+{
+  "dataset": "Spark",
+  "total_logs": 2000,
+  "offline_logs": 1400,
+  "online_logs": 600,
+  "unique_offline": 1215,
+  "split_ratio": 0.7,
+  "offline_file": "datasets/Spark/Spark_offline.csv",
+  "online_file": "datasets/Spark/Spark_online.csv",
+  "log_format": "<Date> <Time> <Level> <Component>: <Content>",
+  "regex_count": 3
+}

@@ -1,6 +1,10 @@
 # Raw log files (too large for GitHub)
 datasets/**/*.log
-datasets/**/*.csv
+
+# Offline/online splits (generated)
+datasets/**/*_offline.csv
+datasets/**/*_online.csv
+datasets/**/*_processed.csv
 
 # Python cache
 __pycache__/
@@ -10,3 +14,5 @@ __pycache__/
 # Large generated files
 repository/*.json
 repository/*.npy
+results/*.csv
+results/*.json
