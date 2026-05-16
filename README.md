@@ -93,7 +93,7 @@ The framework can match logs from **completely unseen systems** against all 16 s
 ## Repository Structure
 
 ```
-Adaptive-ParseXFormer/
+ALERT-Adaptive-Log-Parser/
 │
 ├── datasets/                          # Raw log files + ground truth CSVs
 │   ├── HDFS/
@@ -160,8 +160,8 @@ Adaptive-ParseXFormer/
 ## Installation
 
 ```bash
-git clone https://github.com/dhanya-iiitk/Adaptive-ParseXFormer.git
-cd Adaptive-ParseXFormer
+git clone https://github.com/dhanya-iiitk/ALERT-Adaptive-Log-Parser.git
+cd ALERT-Adaptive-Log-Parser
 pip install -r requirements.txt
 ```
 
