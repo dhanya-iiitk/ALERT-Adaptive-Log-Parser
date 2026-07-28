@@ -1,0 +1,21 @@
+{
+  "dataset": "Proxifier",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 345,
+    "partial": 253,
+    "fuzzy": 2,
+    "new": 0
+  },
+  "retrieval_accuracy": 1.0,
+  "exact_rate": 0.575,
+  "partial_rate": 0.4217,
+  "fuzzy_rate": 0.0033,
+  "new_template_rate": 0.0,
+  "new_templates_discovered": 0,
+  "final_store_size": 8,
+  "avg_latency_ms": 10.659,
+  "p95_latency_ms": 12.48,
+  "throughput_logs_per_sec": 93.8,
+  "avg_top1_score": 0.9867
+}

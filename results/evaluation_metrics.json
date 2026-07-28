@@ -3,59 +3,59 @@
     "dataset": "HDFS",
     "GA": 0.866,
     "PA": 1.0,
-    "FGA": 0.7742,
+    "FGA": 0.75,
     "FTA": 1.0,
     "alpha": 0.7,
-    "store_templates": 19
+    "store_templates": 18
   },
   {
     "dataset": "Hadoop",
-    "GA": 0.957,
-    "PA": 0.3765,
-    "FGA": 0.8644,
-    "FTA": 0.5532,
+    "GA": 0.9765,
+    "PA": 0.4005,
+    "FGA": 0.8841,
+    "FTA": 0.5776,
     "alpha": 0.7,
-    "store_templates": 168
+    "store_templates": 165
   },
   {
     "dataset": "Spark",
-    "GA": 0.7675,
-    "PA": 0.9385,
-    "FGA": 0.6957,
-    "FTA": 0.5797,
+    "GA": 0.616,
+    "PA": 0.923,
+    "FGA": 0.7143,
+    "FTA": 0.6286,
     "alpha": 0.7,
     "store_templates": 36
   },
   {
     "dataset": "Zookeeper",
-    "GA": 0.9445,
+    "GA": 0.945,
     "PA": 0.932,
-    "FGA": 0.7885,
-    "FTA": 0.5769,
+    "FGA": 0.7925,
+    "FTA": 0.566,
     "alpha": 0.7,
-    "store_templates": 61
+    "store_templates": 58
   },
   {
     "dataset": "BGL",
-    "GA": 0.8595,
-    "PA": 0.76,
-    "FGA": 0.6596,
-    "FTA": 0.2527,
+    "GA": 0.8725,
+    "PA": 0.7735,
+    "FGA": 0.7011,
+    "FTA": 0.2782,
     "alpha": 0.7,
-    "store_templates": 192
+    "store_templates": 162
   },
   {
     "dataset": "HPC",
-    "GA": 0.84,
-    "PA": 0.872,
-    "FGA": 0.7778,
-    "FTA": 0.6667,
+    "GA": 0.841,
+    "PA": 0.874,
+    "FGA": 0.809,
+    "FTA": 0.6966,
     "alpha": 0.7,
     "store_templates": 46
   },
   {
     "dataset": "Thunderbird",
-    "GA": 0.8935,
+    "GA": 0.9025,
     "PA": 0.8775,
     "FGA": 0.7051,
     "FTA": 0.4286,
@@ -65,7 +65,7 @@
   {
     "dataset": "Windows",
     "GA": 0.7095,
-    "PA": 0.462,
+    "PA": 0.461,
     "FGA": 0.74,
     "FTA": 0.36,
     "alpha": 0.7,
@@ -73,74 +73,74 @@
   },
   {
     "dataset": "Linux",
-    "GA": 0.5845,
-    "PA": 0.438,
-    "FGA": 0.5053,
-    "FTA": 0.328,
+    "GA": 0.591,
+    "PA": 0.445,
+    "FGA": 0.4947,
+    "FTA": 0.3175,
     "alpha": 0.7,
     "store_templates": 72
   },
   {
     "dataset": "Android",
-    "GA": 0.8245,
-    "PA": 0.85,
-    "FGA": 0.759,
-    "FTA": 0.7536,
+    "GA": 0.843,
+    "PA": 0.8685,
+    "FGA": 0.7688,
+    "FTA": 0.764,
     "alpha": 0.7,
-    "store_templates": 210
+    "store_templates": 215
   },
   {
     "dataset": "HealthApp",
-    "GA": 0.668,
-    "PA": 0.528,
-    "FGA": 0.8571,
-    "FTA": 0.5455,
+    "GA": 0.547,
+    "PA": 0.516,
+    "FGA": 0.8243,
+    "FTA": 0.5417,
     "alpha": 0.2,
     "store_templates": 75
   },
   {
     "dataset": "Apache",
     "GA": 0.576,
-    "PA": 0.6875,
-    "FGA": 0.7273,
-    "FTA": 0.3636,
+    "PA": 0.5905,
+    "FGA": 0.6667,
+    "FTA": 0.3333,
     "alpha": 0.3,
     "store_templates": 6
   },
   {
     "dataset": "Proxifier",
-    "GA": 0.9755,
-    "PA": 0.502,
-    "FGA": 0.625,
-    "FTA": 0.5,
+    "GA": 0.977,
+    "PA": 0.5035,
+    "FGA": 0.75,
+    "FTA": 0.625,
     "alpha": 0.7,
     "store_templates": 8
   },
   {
     "dataset": "OpenSSH",
-    "GA": 0.1075,
-    "PA": 0.349,
-    "FGA": 0.1905,
-    "FTA": 0.1951,
+    "GA": 0.2325,
+    "PA": 0.42,
+    "FGA": 0.381,
+    "FTA": 0.2927,
     "alpha": 0.7,
     "store_templates": 15
   },
   {
     "dataset": "OpenStack",
-    "GA": 0.7325,
-    "PA": 0.363,
-    "FGA": 0.2073,
-    "FTA": 0.8217,
+    "GA": 0.9035,
+    "PA": 0.399,
+    "FGA": 0.6476,
+    "FTA": 0.8736,
     "alpha": 0.7,
-    "store_templates": 158
+    "store_templates": 63
   },
   {
     "dataset": "Mac",
-    "GA": 0.7745,
-    "PA": 0.5455,
-    "FGA": 0.7668,
-    "FTA": 0.4082,
+    "GA": 0.743,
+    "PA": 0.528,
+    "FGA": 0.769,
+    "FTA": 0.4028,
     "alpha": 0.7,
-    "store_templates": 534
+    "store_templates": 522
   }
 ]

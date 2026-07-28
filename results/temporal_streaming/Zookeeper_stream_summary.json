@@ -1,0 +1,21 @@
+{
+  "dataset": "Zookeeper",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 537,
+    "partial": 55,
+    "fuzzy": 1,
+    "new": 7
+  },
+  "retrieval_accuracy": 0.9883,
+  "exact_rate": 0.895,
+  "partial_rate": 0.0917,
+  "fuzzy_rate": 0.0017,
+  "new_template_rate": 0.0117,
+  "new_templates_discovered": 7,
+  "final_store_size": 52,
+  "avg_latency_ms": 20.834,
+  "p95_latency_ms": 26.122,
+  "throughput_logs_per_sec": 48.0,
+  "avg_top1_score": 0.9967
+}

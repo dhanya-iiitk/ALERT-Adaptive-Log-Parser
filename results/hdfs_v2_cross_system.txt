@@ -1,0 +1,50 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading SBERT...
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights:  60%|██████    | 62/103 [00:00<00:00, 607.20it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 593.87it/s]
+Loaded 291 HDFS_v2 logs
+Embedding...
+Batches:   0%|          | 0/5 [00:00<?, ?it/s]Batches:  20%|██        | 1/5 [00:01<00:07,  2.00s/it]Batches:  40%|████      | 2/5 [00:02<00:03,  1.28s/it]Batches:  60%|██████    | 3/5 [00:03<00:01,  1.12it/s]Batches: 100%|██████████| 5/5 [00:03<00:00,  2.29it/s]Batches: 100%|██████████| 5/5 [00:03<00:00,  1.48it/s]
+  [HDFS        ] matched=  0 new=291 match=0.000 score=0.3968
+  [Hadoop      ] matched= 16 new=275 match=0.055 score=0.4025
+  [Spark       ] matched=  1 new=290 match=0.003 score=0.3524
+  [Zookeeper   ] matched=  1 new=290 match=0.003 score=0.2817
+  [BGL         ] matched=  0 new=291 match=0.000 score=0.3340
+  [HPC         ] matched=  0 new=291 match=0.000 score=0.2863
+  [Thunderbird ] matched=  0 new=291 match=0.000 score=0.2989
+  [Windows     ] matched=  0 new=291 match=0.000 score=0.2828
+  [Linux       ] matched=  0 new=291 match=0.000 score=0.3006
+  [Android     ] matched=  0 new=291 match=0.000 score=0.2705
+  [HealthApp   ] matched=  0 new=291 match=0.000 score=0.2525
+  [Apache      ] matched=  0 new=291 match=0.000 score=0.1885
+  [Proxifier   ] matched=  0 new=291 match=0.000 score=0.2418
+  [OpenSSH     ] matched=  0 new=291 match=0.000 score=0.2068
+  [OpenStack   ] matched=  0 new=291 match=0.000 score=0.2662
+  [Mac         ] matched=  0 new=291 match=0.000 score=0.2950
+
+============================================================
+HDFS_v2 CROSS-SYSTEM RESULTS
+============================================================
+Dataset          Match%     New%  MeanScore
+------------------------------------------
+HDFS             0.0000   1.0000     0.3968
+Hadoop           0.0550   0.9450     0.4025
+Spark            0.0034   0.9966     0.3524
+Zookeeper        0.0034   0.9966     0.2817
+BGL              0.0000   1.0000     0.3340
+HPC              0.0000   1.0000     0.2863
+Thunderbird      0.0000   1.0000     0.2989
+Windows          0.0000   1.0000     0.2828
+Linux            0.0000   1.0000     0.3006
+Android          0.0000   1.0000     0.2705
+HealthApp        0.0000   1.0000     0.2525
+Apache           0.0000   1.0000     0.1885
+Proxifier        0.0000   1.0000     0.2418
+OpenSSH          0.0000   1.0000     0.2068
+OpenStack        0.0000   1.0000     0.2662
+Mac              0.0000   1.0000     0.2950
+
+Best matching store:  Hadoop (0.0550)
+HDFS store new rate:  1.0000 (291 new templates)
+Total logs tested:    291
+
+Saved: results/hdfs_v2_cross_system.json

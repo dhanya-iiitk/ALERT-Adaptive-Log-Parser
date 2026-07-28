@@ -1,0 +1,21 @@
+{
+  "dataset": "Mac",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 376,
+    "partial": 170,
+    "fuzzy": 24,
+    "new": 30
+  },
+  "retrieval_accuracy": 0.95,
+  "exact_rate": 0.6267,
+  "partial_rate": 0.2833,
+  "fuzzy_rate": 0.04,
+  "new_template_rate": 0.05,
+  "new_templates_discovered": 30,
+  "final_store_size": 354,
+  "avg_latency_ms": 117.193,
+  "p95_latency_ms": 190.387,
+  "throughput_logs_per_sec": 8.5,
+  "avg_top1_score": 0.9745
+}

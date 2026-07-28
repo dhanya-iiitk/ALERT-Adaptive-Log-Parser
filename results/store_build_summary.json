@@ -1,11 +1,146 @@
 {
+  "HDFS": {
+    "dataset": "HDFS",
+    "total_logs": 2000,
+    "unique_logs": 229,
+    "n_templates": 18,
+    "threshold": 0.7,
+    "tau_r": 0.1,
+    "store_path": "repository_finetuned/HDFS_template_store.json"
+  },
+  "Hadoop": {
+    "dataset": "Hadoop",
+    "total_logs": 2000,
+    "unique_logs": 734,
+    "n_templates": 165,
+    "threshold": 0.65,
+    "tau_r": 0.1,
+    "store_path": "repository_finetuned/Hadoop_template_store.json"
+  },
+  "Spark": {
+    "dataset": "Spark",
+    "total_logs": 2000,
+    "unique_logs": 1695,
+    "n_templates": 36,
+    "threshold": 0.97,
+    "tau_r": 0.85,
+    "store_path": "repository_finetuned/Spark_template_store.json"
+  },
+  "Zookeeper": {
+    "dataset": "Zookeeper",
+    "total_logs": 2000,
+    "unique_logs": 261,
+    "n_templates": 58,
+    "threshold": 0.64,
+    "tau_r": 0.9,
+    "store_path": "repository_finetuned/Zookeeper_template_store.json"
+  },
+  "BGL": {
+    "dataset": "BGL",
+    "total_logs": 2000,
+    "unique_logs": 656,
+    "n_templates": 162,
+    "threshold": 0.82,
+    "tau_r": 0.7,
+    "store_path": "repository_finetuned/BGL_template_store.json"
+  },
+  "HPC": {
+    "dataset": "HPC",
+    "total_logs": 2000,
+    "unique_logs": 356,
+    "n_templates": 46,
+    "threshold": 0.99,
+    "tau_r": 0.8,
+    "store_path": "repository_finetuned/HPC_template_store.json"
+  },
+  "Thunderbird": {
+    "dataset": "Thunderbird",
+    "total_logs": 2000,
+    "unique_logs": 328,
+    "n_templates": 149,
+    "threshold": 0.79,
+    "tau_r": 0.61,
+    "store_path": "repository_finetuned/Thunderbird_template_store.json"
+  },
+  "Windows": {
+    "dataset": "Windows",
+    "total_logs": 2000,
+    "unique_logs": 963,
+    "n_templates": 50,
+    "threshold": 0.6,
+    "tau_r": 0.7,
+    "store_path": "repository_finetuned/Windows_template_store.json"
+  },
+  "Linux": {
+    "dataset": "Linux",
+    "total_logs": 2000,
+    "unique_logs": 181,
+    "n_templates": 72,
+    "threshold": 0.35,
+    "tau_r": 0.65,
+    "store_path": "repository_finetuned/Linux_template_store.json"
+  },
+  "Android": {
+    "dataset": "Android",
+    "total_logs": 2000,
+    "unique_logs": 236,
+    "n_templates": 215,
+    "threshold": 0.42,
+    "tau_r": 0.8,
+    "store_path": "repository_finetuned/Android_template_store.json"
+  },
+  "HealthApp": {
+    "dataset": "HealthApp",
+    "total_logs": 2000,
+    "unique_logs": 1179,
+    "n_templates": 75,
+    "threshold": 0.87,
+    "tau_r": 0.1,
+    "store_path": "repository_finetuned/HealthApp_template_store.json"
+  },
+  "Apache": {
+    "dataset": "Apache",
+    "total_logs": 2000,
+    "unique_logs": 855,
+    "n_templates": 6,
+    "threshold": 0.96,
+    "tau_r": 0.7,
+    "store_path": "repository_finetuned/Apache_template_store.json"
+  },
+  "Proxifier": {
+    "dataset": "Proxifier",
+    "total_logs": 2000,
+    "unique_logs": 670,
+    "n_templates": 8,
+    "threshold": 0.75,
+    "tau_r": 0.95,
+    "store_path": "repository_finetuned/Proxifier_template_store.json"
+  },
+  "OpenSSH": {
+    "dataset": "OpenSSH",
+    "total_logs": 2000,
+    "unique_logs": 641,
+    "n_templates": 15,
+    "threshold": 0.995,
+    "tau_r": 0.75,
+    "store_path": "repository_finetuned/OpenSSH_template_store.json"
+  },
   "OpenStack": {
     "dataset": "OpenStack",
     "total_logs": 2000,
     "unique_logs": 533,
-    "n_templates": 158,
+    "n_templates": 63,
     "threshold": 0.99,
     "tau_r": 0.9,
-    "store_path": "repository/OpenStack_template_store.json"
+    "store_path": "repository_finetuned/OpenStack_template_store.json"
+  },
+  "Mac": {
+    "dataset": "Mac",
+    "total_logs": 2000,
+    "unique_logs": 1173,
+    "n_templates": 522,
+    "threshold": 0.569,
+    "tau_r": 0.78,
+    "store_path": "repository_finetuned/Mac_template_store.json"
   }
 }

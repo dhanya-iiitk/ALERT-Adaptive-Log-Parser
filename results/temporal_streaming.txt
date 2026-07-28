@@ -1,0 +1,5 @@
+usage: log_matcher.py [-h] --dataset DATASET [--data_dir DATA_DIR]
+                      [--store_dir STORE_DIR] [--output_dir OUTPUT_DIR]
+                      [--top_k TOP_K] [--new_thr NEW_THR]
+                      [--max_logs MAX_LOGS] [--verbose]
+log_matcher.py: error: the following arguments are required: --dataset

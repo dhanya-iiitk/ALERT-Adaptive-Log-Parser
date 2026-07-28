@@ -1,0 +1,127 @@
+
+[HDFS] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=219692.9/s new=0
+  Spell:  acc=0.9850 lat=0.14ms thr=7108.1/s new=9
+  ALERT:  acc=1.0000 lat=31.69ms thr=31.6/s new=0
+
+[Hadoop] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=225560.8/s new=0
+  Spell:  acc=0.9933 lat=0.06ms thr=16227.6/s new=4
+  ALERT:  acc=1.0000 lat=63.95ms thr=15.6/s new=0
+
+[Spark] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=245304.8/s new=0
+  Spell:  acc=0.9833 lat=0.11ms thr=8768.4/s new=10
+  ALERT:  acc=1.0000 lat=36.61ms thr=27.3/s new=0
+
+[Zookeeper] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=200540.5/s new=0
+  Spell:  acc=0.9550 lat=0.20ms thr=5056.8/s new=27
+  ALERT:  acc=1.0000 lat=42.04ms thr=23.8/s new=0
+
+[BGL] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=219692.9/s new=0
+  Spell:  acc=0.9267 lat=0.63ms thr=1590.0/s new=44
+  ALERT:  acc=1.0000 lat=74.28ms thr=13.5/s new=0
+
+[HPC] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=283080.1/s new=0
+  Spell:  acc=0.9800 lat=0.05ms thr=19894.1/s new=12
+  ALERT:  acc=1.0000 lat=56.68ms thr=17.6/s new=0
+
+[Thunderbird] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.01ms thr=183651.9/s new=0
+  Spell:  acc=0.9217 lat=2.79ms thr=358.3/s new=47
+  ALERT:  acc=1.0000 lat=71.99ms thr=13.9/s new=0
+
+[Windows] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=252795.8/s new=0
+  Spell:  acc=0.9917 lat=0.05ms thr=18458.5/s new=5
+  ALERT:  acc=1.0000 lat=40.62ms thr=24.6/s new=0
+
+[Linux] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=246168.7/s new=0
+  Spell:  acc=0.8583 lat=0.09ms thr=10741.8/s new=85
+  ALERT:  acc=0.9983 lat=47.64ms thr=21.0/s new=1
+
+[Android] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.01ms thr=190174.7/s new=0
+  Spell:  acc=0.8650 lat=0.32ms thr=3153.3/s new=81
+  ALERT:  acc=1.0000 lat=92.24ms thr=10.8/s new=0
+
+[HealthApp] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.01ms thr=169295.8/s new=0
+  Spell:  acc=0.8150 lat=0.11ms thr=8720.1/s new=111
+  ALERT:  acc=1.0000 lat=48.20ms thr=20.7/s new=0
+
+[Apache] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=257477.2/s new=0
+  Spell:  acc=0.9917 lat=0.04ms thr=27483.5/s new=5
+  ALERT:  acc=1.0000 lat=32.87ms thr=30.4/s new=0
+
+[Proxifier] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=242281.9/s new=0
+  Spell:  acc=0.9917 lat=0.09ms thr=11113.1/s new=5
+  ALERT:  acc=1.0000 lat=35.84ms thr=27.9/s new=0
+
+[OpenSSH] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=244589.6/s new=0
+  Spell:  acc=0.9850 lat=0.07ms thr=14151.4/s new=9
+  ALERT:  acc=1.0000 lat=38.30ms thr=26.1/s new=0
+
+[OpenStack] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.00ms thr=224454.4/s new=0
+  Spell:  acc=0.9550 lat=0.27ms thr=3729.5/s new=27
+  ALERT:  acc=1.0000 lat=73.07ms thr=13.7/s new=0
+
+[Mac] Streaming 600 logs...
+  Drain:  acc=1.0000 lat=0.01ms thr=187092.6/s new=0
+  Spell:  acc=0.7067 lat=1.60ms thr=623.2/s new=176
+  ALERT:  acc=1.0000 lat=150.68ms thr=6.6/s new=0
+
+======================================================================
+STREAMING COMPARISON SUMMARY
+======================================================================
+Dataset         Drain Acc  Spell Acc  ALERT Acc  ALERT Lat
+-------------------------------------------------------
+HDFS               1.0000     0.9850     1.0000      31.7ms
+Hadoop             1.0000     0.9933     1.0000      63.9ms
+Spark              1.0000     0.9833     1.0000      36.6ms
+Zookeeper          1.0000     0.9550     1.0000      42.0ms
+BGL                1.0000     0.9267     1.0000      74.3ms
+HPC                1.0000     0.9800     1.0000      56.7ms
+Thunderbird        1.0000     0.9217     1.0000      72.0ms
+Windows            1.0000     0.9917     1.0000      40.6ms
+Linux              1.0000     0.8583     0.9983      47.6ms
+Android            1.0000     0.8650     1.0000      92.2ms
+HealthApp          1.0000     0.8150     1.0000      48.2ms
+Apache             1.0000     0.9917     1.0000      32.9ms
+Proxifier          1.0000     0.9917     1.0000      35.8ms
+OpenSSH            1.0000     0.9850     1.0000      38.3ms
+OpenStack          1.0000     0.9550     1.0000      73.1ms
+Mac                1.0000     0.7067     1.0000     150.7ms
+-------------------------------------------------------
+Mean               1.0000     0.9316     0.9999      58.5ms
+
+LATENCY COMPARISON (mean per log):
+  Drain:  0.00ms  (220201.1 logs/sec)
+  Spell:  0.41ms  (2412.1 logs/sec)
+  ALERT:  58.54ms  (17.1 logs/sec)
+Traceback (most recent call last):
+  File "/home/iiitk-lab2/Desktop/ALERT-Adaptive-Log-Parser/ALERT_drain_spell_comparison.py", line 237, in <module>
+    json.dump(results, f, indent=2)
+  File "/usr/lib/python3.10/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/usr/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/usr/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable

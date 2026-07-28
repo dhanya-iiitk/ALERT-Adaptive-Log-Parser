@@ -1,0 +1,21 @@
+{
+  "dataset": "HPC",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 478,
+    "partial": 116,
+    "fuzzy": 4,
+    "new": 2
+  },
+  "retrieval_accuracy": 0.9967,
+  "exact_rate": 0.7967,
+  "partial_rate": 0.1933,
+  "fuzzy_rate": 0.0067,
+  "new_template_rate": 0.0033,
+  "new_templates_discovered": 2,
+  "final_store_size": 42,
+  "avg_latency_ms": 17.664,
+  "p95_latency_ms": 23.601,
+  "throughput_logs_per_sec": 56.6,
+  "avg_top1_score": 0.9818
+}

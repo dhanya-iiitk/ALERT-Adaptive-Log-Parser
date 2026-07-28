@@ -1,0 +1,21 @@
+{
+  "dataset": "Thunderbird",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 327,
+    "partial": 232,
+    "fuzzy": 17,
+    "new": 24
+  },
+  "retrieval_accuracy": 0.96,
+  "exact_rate": 0.545,
+  "partial_rate": 0.3867,
+  "fuzzy_rate": 0.0283,
+  "new_template_rate": 0.04,
+  "new_templates_discovered": 24,
+  "final_store_size": 172,
+  "avg_latency_ms": 52.839,
+  "p95_latency_ms": 64.393,
+  "throughput_logs_per_sec": 18.9,
+  "avg_top1_score": 0.9817
+}

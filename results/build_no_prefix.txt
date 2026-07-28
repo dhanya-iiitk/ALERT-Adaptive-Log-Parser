@@ -1,0 +1,139 @@
+
+============================================================
+  Building [no_prefix] store: HDFS
+============================================================
+  Loaded embeddings: (229, 384)
+  Stage 1: 9 keyword groups
+  Stage 2: 19 clusters  max=113  avg=12.1
+  [HDFS] Templates=19  Store=repository_no_prefix/HDFS_template_store.json
+
+============================================================
+  Building [no_prefix] store: Hadoop
+============================================================
+  Loaded embeddings: (734, 384)
+  Stage 1: 107 keyword groups
+  Stage 2: 168 clusters  max=326  avg=4.4
+  [Hadoop] Templates=168  Store=repository_no_prefix/Hadoop_template_store.json
+
+============================================================
+  Building [no_prefix] store: Spark
+============================================================
+  Loaded embeddings: (1695, 384)
+  Stage 1: 55 keyword groups
+  Using exact n_clusters=36
+  Exact clustering: 36 clusters  max=305  avg=47.1
+  [Spark] Templates=36  Store=repository_no_prefix/Spark_template_store.json
+
+============================================================
+  Building [no_prefix] store: Zookeeper
+============================================================
+  Loaded embeddings: (261, 384)
+  Stage 1: 39 keyword groups
+  Stage 2: 61 clusters  max=47  avg=4.3
+  [Zookeeper] Templates=61  Store=repository_no_prefix/Zookeeper_template_store.json
+
+============================================================
+  Building [no_prefix] store: BGL
+============================================================
+  Loaded embeddings: (656, 384)
+  Stage 1: 52 keyword groups
+  Stage 2: 192 clusters  max=119  avg=3.4
+  [BGL] Templates=192  Store=repository_no_prefix/BGL_template_store.json
+
+============================================================
+  Building [no_prefix] store: HPC
+============================================================
+  Loaded embeddings: (356, 384)
+  Stage 1: 32 keyword groups
+  Using exact n_clusters=46
+  Exact clustering: 46 clusters  max=90  avg=7.7
+  [HPC] Templates=46  Store=repository_no_prefix/HPC_template_store.json
+
+============================================================
+  Building [no_prefix] store: Thunderbird
+============================================================
+  Loaded embeddings: (328, 384)
+  Stage 1: 129 keyword groups
+  Using exact n_clusters=149
+  Exact clustering: 149 clusters  max=32  avg=2.2
+  [Thunderbird] Templates=149  Store=repository_no_prefix/Thunderbird_template_store.json
+
+============================================================
+  Building [no_prefix] store: Windows
+============================================================
+  Loaded embeddings: (963, 384)
+  Stage 1: 42 keyword groups
+  Using exact n_clusters=50
+  Exact clustering: 50 clusters  max=608  avg=19.3
+  [Windows] Templates=50  Store=repository_no_prefix/Windows_template_store.json
+
+============================================================
+  Building [no_prefix] store: Linux
+============================================================
+  Loaded embeddings: (181, 384)
+  Stage 1: 87 keyword groups
+  Using exact n_clusters=72
+  Exact clustering: 72 clusters  max=34  avg=2.5
+  [Linux] Templates=72  Store=repository_no_prefix/Linux_template_store.json
+
+============================================================
+  Building [no_prefix] store: Android
+============================================================
+  Loaded embeddings: (236, 384)
+  Stage 1: 123 keyword groups
+  Stage 2: 210 clusters  max=3  avg=1.1
+  [Android] Templates=210  Store=repository_no_prefix/Android_template_store.json
+
+============================================================
+  Building [no_prefix] store: HealthApp
+============================================================
+  Loaded embeddings: (1179, 384)
+  Stage 1: 517 keyword groups
+  Using exact n_clusters=75
+  Exact clustering: 75 clusters  max=482  avg=15.7
+  [HealthApp] Templates=75  Store=repository_no_prefix/HealthApp_template_store.json
+
+============================================================
+  Building [no_prefix] store: Apache
+============================================================
+  Loaded embeddings: (855, 384)
+  Stage 1: 4 keyword groups
+  Using exact n_clusters=6
+  Exact clustering: 6 clusters  max=845  avg=142.5
+  [Apache] Templates=6  Store=repository_no_prefix/Apache_template_store.json
+
+============================================================
+  Building [no_prefix] store: Proxifier
+============================================================
+  Loaded embeddings: (670, 384)
+  Stage 1: 5 keyword groups
+  Using exact n_clusters=8
+  Exact clustering: 8 clusters  max=660  avg=83.8
+  [Proxifier] Templates=8  Store=repository_no_prefix/Proxifier_template_store.json
+
+============================================================
+  Building [no_prefix] store: OpenSSH
+============================================================
+  Loaded embeddings: (641, 384)
+  Stage 1: 21 keyword groups
+  Using exact n_clusters=15
+  Exact clustering: 15 clusters  max=497  avg=42.7
+  [OpenSSH] Templates=15  Store=repository_no_prefix/OpenSSH_template_store.json
+
+============================================================
+  Building [no_prefix] store: OpenStack
+============================================================
+  Loaded embeddings: (533, 384)
+  Stage 1: 20 keyword groups
+  Stage 2: 158 clusters  max=22  avg=3.4
+  [OpenStack] Templates=158  Store=repository_no_prefix/OpenStack_template_store.json
+
+============================================================
+  Building [no_prefix] store: Mac
+============================================================
+  Loaded embeddings: (1173, 384)
+  Stage 1: 327 keyword groups
+  Stage 2: 534 clusters  max=135  avg=2.2
+  [Mac] Templates=534  Store=repository_no_prefix/Mac_template_store.json
+
+All stores saved to: repository_no_prefix/

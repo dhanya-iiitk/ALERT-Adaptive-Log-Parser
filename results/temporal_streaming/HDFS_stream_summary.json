@@ -1,0 +1,21 @@
+{
+  "dataset": "HDFS",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 436,
+    "partial": 162,
+    "fuzzy": 1,
+    "new": 1
+  },
+  "retrieval_accuracy": 0.9983,
+  "exact_rate": 0.7267,
+  "partial_rate": 0.27,
+  "fuzzy_rate": 0.0017,
+  "new_template_rate": 0.0017,
+  "new_templates_discovered": 1,
+  "final_store_size": 14,
+  "avg_latency_ms": 10.117,
+  "p95_latency_ms": 11.5,
+  "throughput_logs_per_sec": 98.8,
+  "avg_top1_score": 0.9916
+}

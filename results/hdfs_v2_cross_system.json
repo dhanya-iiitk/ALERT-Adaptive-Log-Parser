@@ -1,0 +1,130 @@
+{
+  "HDFS": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.3968189485507071
+  },
+  "Hadoop": {
+    "matched": 16,
+    "new": 275,
+    "total": 291,
+    "match_rate": 0.054982817869415807,
+    "new_rate": 0.9450171821305842,
+    "mean_score": 0.4024935950066161
+  },
+  "Spark": {
+    "matched": 1,
+    "new": 290,
+    "total": 291,
+    "match_rate": 0.003436426116838488,
+    "new_rate": 0.9965635738831615,
+    "mean_score": 0.3523978181521178
+  },
+  "Zookeeper": {
+    "matched": 1,
+    "new": 290,
+    "total": 291,
+    "match_rate": 0.003436426116838488,
+    "new_rate": 0.9965635738831615,
+    "mean_score": 0.2816505752674232
+  },
+  "BGL": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.3339808205969454
+  },
+  "HPC": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.2863178549382389
+  },
+  "Thunderbird": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.2988997145315689
+  },
+  "Windows": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.2828161913723339
+  },
+  "Linux": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.3005622581656318
+  },
+  "Android": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.2704648575760731
+  },
+  "HealthApp": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.25252194832636554
+  },
+  "Apache": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.18852138403623964
+  },
+  "Proxifier": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.24178375691959264
+  },
+  "OpenSSH": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.20675094850255524
+  },
+  "OpenStack": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.26623585336468325
+  },
+  "Mac": {
+    "matched": 0,
+    "new": 291,
+    "total": 291,
+    "match_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.2949701698556277
+  }
+}

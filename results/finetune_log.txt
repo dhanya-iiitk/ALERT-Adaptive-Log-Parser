@@ -1,0 +1,66 @@
+/home/iiitk-lab2/Desktop/ALERT-Adaptive-Log-Parser/finetune_sbert_log.py:85: DeprecationWarning: Importing from 'sentence_transformers.losses' is deprecated and will be removed in a future version. Please use 'sentence_transformers.sentence_transformer.losses' instead.
+  from sentence_transformers import (
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+============================================================
+SBERT LOG-DOMAIN CONTRASTIVE FINE-TUNING
+============================================================
+
+Step 1: Creating contrastive pairs from ground truth...
+  [HDFS] Events=14 Pos=95 Neg=95
+  [OpenSSH] Events=27 Pos=133 Neg=133
+  [Proxifier] Events=8 Pos=57 Neg=57
+
+Total pairs: 570
+Positive: 285
+Negative: 285
+
+Step 2: Loading all-MiniLM-L6-v2...
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 13954.82it/s]
+  Model loaded in 5.8s
+
+Step 3: Baseline evaluation (generic SBERT)...
+  OpenSSH semantic conflation test:
+  (Lower similarity = better discrimination)
+    Sim=0.9077: 'Accepted password for root fro...' vs 'Failed password for root from ...'
+    Sim=0.9252: 'Accepted password for admin fr...' vs 'Failed password for admin from...'
+    Sim=0.8684: 'Accepted password for user1 fr...' vs 'Failed password for user2 from...'
+  Mean similarity (generic): 0.9004
+
+Step 4: Fine-tuning on log contrastive pairs...
+  (CPU fine-tuning — recording time...)
+Computing widget examples:   0%|          | 0/1 [00:00<?, ?example/s]                                                                       0%|          | 0/72 [00:00<?, ?it/s]/home/iiitk-lab2/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:668: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+  1%|▏         | 1/72 [00:01<01:26,  1.22s/it]  3%|▎         | 2/72 [00:02<01:10,  1.00s/it]  4%|▍         | 3/72 [00:02<00:57,  1.20it/s]  6%|▌         | 4/72 [00:05<02:01,  1.78s/it]  7%|▋         | 5/72 [00:06<01:30,  1.35s/it]  8%|▊         | 6/72 [00:07<01:27,  1.33s/it] 10%|▉         | 7/72 [00:08<01:12,  1.12s/it] 11%|█         | 8/72 [00:09<01:15,  1.18s/it] 12%|█▎        | 9/72 [00:10<01:03,  1.01s/it] 14%|█▍        | 10/72 [00:11<00:56,  1.11it/s] 15%|█▌        | 11/72 [00:11<00:49,  1.23it/s] 17%|█▋        | 12/72 [00:12<00:45,  1.33it/s] 18%|█▊        | 13/72 [00:13<00:44,  1.33it/s] 19%|█▉        | 14/72 [00:13<00:43,  1.34it/s] 21%|██        | 15/72 [00:14<00:43,  1.32it/s] 22%|██▏       | 16/72 [00:15<00:41,  1.36it/s] 24%|██▎       | 17/72 [00:15<00:39,  1.40it/s] 25%|██▌       | 18/72 [00:18<01:07,  1.25s/it] 26%|██▋       | 19/72 [00:19<00:59,  1.12s/it] 28%|██▊       | 20/72 [00:19<00:52,  1.00s/it] 29%|██▉       | 21/72 [00:20<00:45,  1.11it/s] 31%|███       | 22/72 [00:21<00:42,  1.18it/s] 32%|███▏      | 23/72 [00:22<00:40,  1.22it/s] 33%|███▎      | 24/72 [00:22<00:37,  1.27it/s] 35%|███▍      | 25/72 [00:23<00:35,  1.32it/s] 36%|███▌      | 26/72 [00:24<00:35,  1.29it/s] 38%|███▊      | 27/72 [00:25<00:33,  1.32it/s] 39%|███▉      | 28/72 [00:25<00:33,  1.31it/s] 40%|████      | 29/72 [00:26<00:31,  1.38it/s] 42%|████▏     | 30/72 [00:29<00:53,  1.29s/it] 43%|████▎     | 31/72 [00:29<00:44,  1.10s/it] 44%|████▍     | 32/72 [00:32<00:59,  1.50s/it] 46%|████▌     | 33/72 [00:32<00:47,  1.23s/it] 47%|████▋     | 34/72 [00:35<00:59,  1.57s/it] 49%|████▊     | 35/72 [00:35<00:48,  1.30s/it] 50%|█████     | 36/72 [00:37<00:48,  1.36s/it] 51%|█████▏    | 37/72 [00:39<00:59,  1.71s/it] 53%|█████▎    | 38/72 [00:40<00:46,  1.38s/it] 54%|█████▍    | 39/72 [00:41<00:37,  1.14s/it] 56%|█████▌    | 40/72 [00:41<00:31,  1.02it/s] 57%|█████▋    | 41/72 [00:43<00:43,  1.39s/it] 58%|█████▊    | 42/72 [00:44<00:34,  1.15s/it] 60%|█████▉    | 43/72 [00:45<00:29,  1.00s/it] 61%|██████    | 44/72 [00:47<00:39,  1.41s/it] 62%|██████▎   | 45/72 [00:48<00:32,  1.19s/it] 64%|██████▍   | 46/72 [00:52<00:56,  2.15s/it] 65%|██████▌   | 47/72 [00:53<00:43,  1.74s/it] 67%|██████▋   | 48/72 [00:54<00:34,  1.42s/it] 68%|██████▊   | 49/72 [00:54<00:28,  1.23s/it] 69%|██████▉   | 50/72 [00:55<00:22,  1.05s/it] 71%|███████   | 51/72 [00:56<00:19,  1.07it/s] 72%|███████▏  | 52/72 [00:56<00:16,  1.21it/s] 74%|███████▎  | 53/72 [00:58<00:18,  1.04it/s] 75%|███████▌  | 54/72 [00:58<00:15,  1.15it/s] 76%|███████▋  | 55/72 [00:59<00:13,  1.29it/s] 78%|███████▊  | 56/72 [00:59<00:12,  1.33it/s] 79%|███████▉  | 57/72 [01:00<00:11,  1.34it/s] 81%|████████  | 58/72 [01:01<00:10,  1.37it/s] 82%|████████▏ | 59/72 [01:02<00:09,  1.34it/s] 83%|████████▎ | 60/72 [01:02<00:08,  1.44it/s] 85%|████████▍ | 61/72 [01:03<00:07,  1.43it/s] 86%|████████▌ | 62/72 [01:04<00:06,  1.48it/s] 88%|████████▊ | 63/72 [01:05<00:07,  1.17it/s] 89%|████████▉ | 64/72 [01:05<00:06,  1.30it/s] 90%|█████████ | 65/72 [01:08<00:08,  1.26s/it] 92%|█████████▏| 66/72 [01:08<00:06,  1.07s/it] 93%|█████████▎| 67/72 [01:12<00:08,  1.69s/it] 94%|█████████▍| 68/72 [01:12<00:05,  1.37s/it] 96%|█████████▌| 69/72 [01:13<00:03,  1.12s/it] 97%|█████████▋| 70/72 [01:13<00:01,  1.05it/s] 99%|█████████▊| 71/72 [01:14<00:00,  1.14it/s]100%|██████████| 72/72 [01:14<00:00,  1.33it/s]                                               100%|██████████| 72/72 [01:14<00:00,  1.33it/s]100%|██████████| 72/72 [01:14<00:00,  1.04s/it]
+{'train_runtime': '74.95', 'train_samples_per_second': '15.21', 'train_steps_per_second': '0.961', 'train_loss': '0.05133', 'epoch': '2'}
+
+  Training completed!
+  Time on CPU: 1.3 minutes (75 seconds)
+  Pairs: 570, Epochs: 2, Batch: 16
+
+Step 5: Post fine-tuning evaluation...
+  OpenSSH semantic conflation test:
+    Sim=0.7522: 'Accepted password for root fro...' vs 'Failed password for root from ...'
+    Sim=0.7743: 'Accepted password for admin fr...' vs 'Failed password for admin from...'
+    Sim=0.6801: 'Accepted password for user1 fr...' vs 'Failed password for user2 from...'
+  Mean similarity (fine-tuned): 0.7356
+  Mean similarity (generic):    0.9004
+  Similarity reduction: 0.1649 (improved)
+
+Step 6: Saving fine-tuned model...
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 18.11it/s]
+  Saved to: models/sbert_log_finetuned/
+
+============================================================
+FINE-TUNING SUMMARY
+============================================================
+Training pairs:         570
+Datasets used:          HDFS, OpenSSH, Proxifier
+Epochs:                 2
+Batch size:             16
+CPU training time:      1.3 minutes
+Estimated GPU time:     ~0.1 minutes
+
+OpenSSH Accepted vs Failed similarity:
+  Generic SBERT:        0.9004
+  Fine-tuned SBERT:     0.7356
+  Improvement:          +0.1649

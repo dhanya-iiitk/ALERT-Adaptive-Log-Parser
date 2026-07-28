@@ -1,0 +1,21 @@
+{
+  "dataset": "HealthApp",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 242,
+    "partial": 332,
+    "fuzzy": 10,
+    "new": 16
+  },
+  "retrieval_accuracy": 0.9733,
+  "exact_rate": 0.4033,
+  "partial_rate": 0.5533,
+  "fuzzy_rate": 0.0167,
+  "new_template_rate": 0.0267,
+  "new_templates_discovered": 16,
+  "final_store_size": 72,
+  "avg_latency_ms": 23.964,
+  "p95_latency_ms": 33.41,
+  "throughput_logs_per_sec": 41.7,
+  "avg_top1_score": 0.9747
+}

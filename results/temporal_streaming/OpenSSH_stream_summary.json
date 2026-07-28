@@ -1,0 +1,21 @@
+{
+  "dataset": "OpenSSH",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 313,
+    "partial": 255,
+    "fuzzy": 32,
+    "new": 0
+  },
+  "retrieval_accuracy": 1.0,
+  "exact_rate": 0.5217,
+  "partial_rate": 0.425,
+  "fuzzy_rate": 0.0533,
+  "new_template_rate": 0.0,
+  "new_templates_discovered": 0,
+  "final_store_size": 15,
+  "avg_latency_ms": 12.227,
+  "p95_latency_ms": 15.25,
+  "throughput_logs_per_sec": 81.8,
+  "avg_top1_score": 0.9565
+}

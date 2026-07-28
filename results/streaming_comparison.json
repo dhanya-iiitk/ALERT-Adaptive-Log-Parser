@@ -1,0 +1,23 @@
+{
+  "HDFS": {
+    "n_logs": 600,
+    "drain": {
+      "acc": 1.0,
+      "latency": 0.004551808039347331,
+      "throughput": 219692.92012221736,
+      "new_templates": 0,
+      "total_templates": 17
+    },
+    "spell": {
+      "acc": 0.985,
+      "latency": 0.1406848430633545,
+      "throughput": 7108.086260221158,
+      "new_templates": 9,
+      "total_templates": 9
+    },
+    "alert": {
+      "acc": 1.0,
+      "latency": 31.692866666666667,
+      "throughput": 31.55284154373329,
+      "new_templates": 0,
+      "total_templates": 

@@ -1,0 +1,21 @@
+{
+  "dataset": "BGL",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 107,
+    "partial": 446,
+    "fuzzy": 36,
+    "new": 11
+  },
+  "retrieval_accuracy": 0.9817,
+  "exact_rate": 0.1783,
+  "partial_rate": 0.7433,
+  "fuzzy_rate": 0.06,
+  "new_template_rate": 0.0183,
+  "new_templates_discovered": 11,
+  "final_store_size": 116,
+  "avg_latency_ms": 35.643,
+  "p95_latency_ms": 37.772,
+  "throughput_logs_per_sec": 28.1,
+  "avg_top1_score": 0.9418
+}

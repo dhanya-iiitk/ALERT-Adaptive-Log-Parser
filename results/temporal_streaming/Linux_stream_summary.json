@@ -1,0 +1,21 @@
+{
+  "dataset": "Linux",
+  "total_logs_streamed": 600,
+  "match_counts": {
+    "exact": 435,
+    "partial": 75,
+    "fuzzy": 18,
+    "new": 72
+  },
+  "retrieval_accuracy": 0.88,
+  "exact_rate": 0.725,
+  "partial_rate": 0.125,
+  "fuzzy_rate": 0.03,
+  "new_template_rate": 0.12,
+  "new_templates_discovered": 72,
+  "final_store_size": 144,
+  "avg_latency_ms": 28.001,
+  "p95_latency_ms": 40.934,
+  "throughput_logs_per_sec": 35.7,
+  "avg_top1_score": 0.9781
+}

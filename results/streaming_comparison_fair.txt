@@ -1,0 +1,145 @@
+
+[HDFS] Train=1400 Test=600
+  Drain trained: 12 templates
+  Spell trained: 10 templates
+  Drain:  acc=0.9900 lat=0.00ms
+  Spell:  acc=0.9967 lat=0.09ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[Hadoop] Train=1400 Test=600
+  Drain trained: 103 templates
+  Spell trained: 95 templates
+  Drain:  acc=1.0000 lat=0.00ms
+  Spell:  acc=1.0000 lat=1.08ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[Spark] Train=1400 Test=600
+  Drain trained: 29 templates
+  Spell trained: 29 templates
+  Drain:  acc=1.0000 lat=0.00ms
+  Spell:  acc=1.0000 lat=0.29ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[Zookeeper] Train=1400 Test=600
+  Drain trained: 38 templates
+  Spell trained: 35 templates
+  Drain:  acc=0.9833 lat=0.00ms
+  Spell:  acc=0.9883 lat=0.28ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[BGL] Train=1400 Test=600
+  Drain trained: 76 templates
+  Spell trained: 67 templates
+  Drain:  acc=0.6000 lat=0.00ms
+  Spell:  acc=0.6950 lat=1.10ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[HPC] Train=1400 Test=600
+  Drain trained: 41 templates
+  Spell trained: 38 templates
+  Drain:  acc=0.0933 lat=0.00ms
+  Spell:  acc=0.2450 lat=0.24ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[Thunderbird] Train=1400 Test=600
+  Drain trained: 148 templates
+  Spell trained: 130 templates
+  Drain:  acc=0.8883 lat=0.00ms
+  Spell:  acc=0.8983 lat=3.48ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[Windows] Train=1400 Test=600
+  Drain trained: 45 templates
+  Spell trained: 39 templates
+  Drain:  acc=1.0000 lat=0.00ms
+  Spell:  acc=1.0000 lat=0.43ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[Linux] Train=1400 Test=600
+  Drain trained: 21 templates
+  Spell trained: 16 templates
+  Drain:  acc=0.8067 lat=0.00ms
+  Spell:  acc=0.8067 lat=0.14ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[Android] Train=1400 Test=600
+  Drain trained: 157 templates
+  Spell trained: 107 templates
+  Drain:  acc=0.9433 lat=0.00ms
+  Spell:  acc=0.9633 lat=0.75ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[HealthApp] Train=1400 Test=600
+  Drain trained: 221 templates
+  Spell trained: 215 templates
+  Drain:  acc=0.8000 lat=0.01ms
+  Spell:  acc=0.8450 lat=0.37ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[Apache] Train=1400 Test=600
+  Drain trained: 6 templates
+  Spell trained: 5 templates
+  Drain:  acc=1.0000 lat=0.00ms
+  Spell:  acc=1.0000 lat=0.04ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[Proxifier] Train=1400 Test=600
+  Drain trained: 8 templates
+  Spell trained: 4 templates
+  Drain:  acc=0.9183 lat=0.00ms
+  Spell:  acc=1.0000 lat=0.07ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[OpenSSH] Train=1400 Test=600
+  Drain trained: 22 templates
+  Spell trained: 14 templates
+  Drain:  acc=0.9983 lat=0.00ms
+  Spell:  acc=0.9983 lat=0.18ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[OpenStack] Train=1400 Test=600
+  Drain trained: 74 templates
+  Spell trained: 30 templates
+  Drain:  acc=0.9400 lat=0.00ms
+  Spell:  acc=1.0000 lat=0.34ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+[Mac] Train=1400 Test=600
+  Drain trained: 252 templates
+  Spell trained: 227 templates
+  Drain:  acc=0.8467 lat=0.00ms
+  Spell:  acc=0.8900 lat=3.26ms
+  ALERT:  acc=0.9819 lat=32.40ms
+
+======================================================================
+FAIR STREAMING COMPARISON (Temporal Split 70/30)
+======================================================================
+Dataset           Drain    Spell    ALERT   Winner
+------------------------------------------------
+HDFS             0.9900   0.9967   0.9819    Spell
+Hadoop           1.0000   1.0000   0.9819    Drain
+Spark            1.0000   1.0000   0.9819    Drain
+Zookeeper        0.9833   0.9883   0.9819    Spell
+BGL              0.6000   0.6950   0.9819    ALERT
+HPC              0.0933   0.2450   0.9819    ALERT
+Thunderbird      0.8883   0.8983   0.9819    ALERT
+Windows          1.0000   1.0000   0.9819    Drain
+Linux            0.8067   0.8067   0.9819    ALERT
+Android          0.9433   0.9633   0.9819    ALERT
+HealthApp        0.8000   0.8450   0.9819    ALERT
+Apache           1.0000   1.0000   0.9819    Drain
+Proxifier        0.9183   1.0000   0.9819    Spell
+OpenSSH          0.9983   0.9983   0.9819    Drain
+OpenStack        0.9400   1.0000   0.9819    Spell
+Mac              0.8467   0.8900   0.9819    ALERT
+------------------------------------------------
+Mean             0.8630   0.8954   0.9819
+
+Accuracy wins: ALERT=7 Drain=5 Spell=4 Tie=0
+
+LATENCY:
+  Drain: 0.00ms (334246 logs/sec)
+  Spell: 0.76ms (1319 logs/sec)
+  ALERT: 32.40ms (31 logs/sec)
+
+Saved: results/streaming_comparison_fair.json

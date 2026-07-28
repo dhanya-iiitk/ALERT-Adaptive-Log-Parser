@@ -1,0 +1,98 @@
+
+============================================================
+  Building [no_keyword] store: HDFS
+============================================================
+  Loaded embeddings: (229, 384)
+  [HDFS] Templates=15  Store=repository_no_keyword/HDFS_template_store.json
+
+============================================================
+  Building [no_keyword] store: Hadoop
+============================================================
+  Loaded embeddings: (734, 384)
+  [Hadoop] Templates=114  Store=repository_no_keyword/Hadoop_template_store.json
+
+============================================================
+  Building [no_keyword] store: Spark
+============================================================
+  Loaded embeddings: (1695, 384)
+  [Spark] Templates=36  Store=repository_no_keyword/Spark_template_store.json
+
+============================================================
+  Building [no_keyword] store: Zookeeper
+============================================================
+  Loaded embeddings: (261, 384)
+  [Zookeeper] Templates=48  Store=repository_no_keyword/Zookeeper_template_store.json
+
+============================================================
+  Building [no_keyword] store: BGL
+============================================================
+  Loaded embeddings: (656, 384)
+  [BGL] Templates=114  Store=repository_no_keyword/BGL_template_store.json
+
+============================================================
+  Building [no_keyword] store: HPC
+============================================================
+  Loaded embeddings: (356, 384)
+  [HPC] Templates=46  Store=repository_no_keyword/HPC_template_store.json
+
+============================================================
+  Building [no_keyword] store: Thunderbird
+============================================================
+  Loaded embeddings: (328, 384)
+  [Thunderbird] Templates=149  Store=repository_no_keyword/Thunderbird_template_store.json
+
+============================================================
+  Building [no_keyword] store: Windows
+============================================================
+  Loaded embeddings: (963, 384)
+  [Windows] Templates=50  Store=repository_no_keyword/Windows_template_store.json
+
+============================================================
+  Building [no_keyword] store: Linux
+============================================================
+  Loaded embeddings: (181, 384)
+  [Linux] Templates=72  Store=repository_no_keyword/Linux_template_store.json
+
+============================================================
+  Building [no_keyword] store: Android
+============================================================
+  Loaded embeddings: (236, 384)
+  [Android] Templates=190  Store=repository_no_keyword/Android_template_store.json
+
+============================================================
+  Building [no_keyword] store: HealthApp
+============================================================
+  Loaded embeddings: (1179, 384)
+  [HealthApp] Templates=75  Store=repository_no_keyword/HealthApp_template_store.json
+
+============================================================
+  Building [no_keyword] store: Apache
+============================================================
+  Loaded embeddings: (855, 384)
+  [Apache] Templates=6  Store=repository_no_keyword/Apache_template_store.json
+
+============================================================
+  Building [no_keyword] store: Proxifier
+============================================================
+  Loaded embeddings: (670, 384)
+  [Proxifier] Templates=8  Store=repository_no_keyword/Proxifier_template_store.json
+
+============================================================
+  Building [no_keyword] store: OpenSSH
+============================================================
+  Loaded embeddings: (641, 384)
+  [OpenSSH] Templates=15  Store=repository_no_keyword/OpenSSH_template_store.json
+
+============================================================
+  Building [no_keyword] store: OpenStack
+============================================================
+  Loaded embeddings: (533, 384)
+  [OpenStack] Templates=34  Store=repository_no_keyword/OpenStack_template_store.json
+
+============================================================
+  Building [no_keyword] store: Mac
+============================================================
+  Loaded embeddings: (1173, 384)
+  [Mac] Templates=359  Store=repository_no_keyword/Mac_template_store.json
+
+All stores saved to: repository_no_keyword/
