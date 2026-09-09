@@ -2,20 +2,20 @@
   "dataset": "Mac",
   "total_logs_streamed": 600,
   "match_counts": {
-    "exact": 476,
-    "partial": 124,
+    "exact": 482,
+    "partial": 118,
     "fuzzy": 0,
     "new": 0
   },
   "retrieval_accuracy": 1.0,
-  "exact_rate": 0.7933,
-  "partial_rate": 0.2067,
+  "exact_rate": 0.8033,
+  "partial_rate": 0.1967,
   "fuzzy_rate": 0.0,
   "new_template_rate": 0.0,
   "new_templates_discovered": 0,
   "final_store_size": 418,
-  "avg_latency_ms": 150.679,
-  "p95_latency_ms": 215.564,
-  "throughput_logs_per_sec": 6.6,
-  "avg_top1_score": 0.992
+  "avg_latency_ms": 132.552,
+  "p95_latency_ms": 224.477,
+  "throughput_logs_per_sec": 7.5,
+  "avg_top1_score": 0.9938
 }

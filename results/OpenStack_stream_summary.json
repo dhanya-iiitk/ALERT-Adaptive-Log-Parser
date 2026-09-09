@@ -14,8 +14,8 @@
   "new_template_rate": 0.0,
   "new_templates_discovered": 0,
   "final_store_size": 150,
-  "avg_latency_ms": 73.075,
-  "p95_latency_ms": 115.262,
-  "throughput_logs_per_sec": 13.7,
-  "avg_top1_score": 0.9893
+  "avg_latency_ms": 47.389,
+  "p95_latency_ms": 49.71,
+  "throughput_logs_per_sec": 21.1,
+  "avg_top1_score": 0.9908
 }

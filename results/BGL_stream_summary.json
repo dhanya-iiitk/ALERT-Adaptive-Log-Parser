@@ -2,20 +2,20 @@
   "dataset": "BGL",
   "total_logs_streamed": 600,
   "match_counts": {
-    "exact": 206,
+    "exact": 207,
     "partial": 393,
-    "fuzzy": 1,
+    "fuzzy": 0,
     "new": 0
   },
   "retrieval_accuracy": 1.0,
-  "exact_rate": 0.3433,
+  "exact_rate": 0.345,
   "partial_rate": 0.655,
-  "fuzzy_rate": 0.0017,
+  "fuzzy_rate": 0.0,
   "new_template_rate": 0.0,
   "new_templates_discovered": 0,
   "final_store_size": 162,
-  "avg_latency_ms": 74.279,
-  "p95_latency_ms": 120.578,
-  "throughput_logs_per_sec": 13.5,
-  "avg_top1_score": 0.9753
+  "avg_latency_ms": 50.109,
+  "p95_latency_ms": 55.6,
+  "throughput_logs_per_sec": 20.0,
+  "avg_top1_score": 0.9793
 }

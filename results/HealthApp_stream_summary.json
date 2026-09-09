@@ -2,20 +2,20 @@
   "dataset": "HealthApp",
   "total_logs_streamed": 600,
   "match_counts": {
-    "exact": 274,
-    "partial": 326,
+    "exact": 305,
+    "partial": 295,
     "fuzzy": 0,
     "new": 0
   },
   "retrieval_accuracy": 1.0,
-  "exact_rate": 0.4567,
-  "partial_rate": 0.5433,
+  "exact_rate": 0.5083,
+  "partial_rate": 0.4917,
   "fuzzy_rate": 0.0,
   "new_template_rate": 0.0,
   "new_templates_discovered": 0,
   "final_store_size": 72,
-  "avg_latency_ms": 48.204,
-  "p95_latency_ms": 102.285,
-  "throughput_logs_per_sec": 20.7,
-  "avg_top1_score": 0.9832
+  "avg_latency_ms": 26.541,
+  "p95_latency_ms": 28.471,
+  "throughput_logs_per_sec": 37.7,
+  "avg_top1_score": 0.9865
 }

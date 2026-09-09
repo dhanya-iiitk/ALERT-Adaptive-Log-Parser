@@ -2,20 +2,20 @@
   "dataset": "Proxifier",
   "total_logs_streamed": 600,
   "match_counts": {
-    "exact": 388,
-    "partial": 212,
+    "exact": 288,
+    "partial": 312,
     "fuzzy": 0,
     "new": 0
   },
   "retrieval_accuracy": 1.0,
-  "exact_rate": 0.6467,
-  "partial_rate": 0.3533,
+  "exact_rate": 0.48,
+  "partial_rate": 0.52,
   "fuzzy_rate": 0.0,
   "new_template_rate": 0.0,
   "new_templates_discovered": 0,
-  "final_store_size": 13,
-  "avg_latency_ms": 35.843,
-  "p95_latency_ms": 91.494,
-  "throughput_logs_per_sec": 27.9,
-  "avg_top1_score": 0.9916
+  "final_store_size": 8,
+  "avg_latency_ms": 8.866,
+  "p95_latency_ms": 12.319,
+  "throughput_logs_per_sec": 112.8,
+  "avg_top1_score": 0.9816
 }

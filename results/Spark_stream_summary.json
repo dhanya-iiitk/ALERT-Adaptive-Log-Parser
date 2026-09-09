@@ -2,20 +2,20 @@
   "dataset": "Spark",
   "total_logs_streamed": 600,
   "match_counts": {
-    "exact": 3,
-    "partial": 597,
+    "exact": 6,
+    "partial": 594,
     "fuzzy": 0,
     "new": 0
   },
   "retrieval_accuracy": 1.0,
-  "exact_rate": 0.005,
-  "partial_rate": 0.995,
+  "exact_rate": 0.01,
+  "partial_rate": 0.99,
   "fuzzy_rate": 0.0,
   "new_template_rate": 0.0,
   "new_templates_discovered": 0,
   "final_store_size": 33,
-  "avg_latency_ms": 36.606,
-  "p95_latency_ms": 92.663,
-  "throughput_logs_per_sec": 27.3,
-  "avg_top1_score": 0.9555
+  "avg_latency_ms": 15.865,
+  "p95_latency_ms": 21.083,
+  "throughput_logs_per_sec": 63.0,
+  "avg_top1_score": 0.9597
 }

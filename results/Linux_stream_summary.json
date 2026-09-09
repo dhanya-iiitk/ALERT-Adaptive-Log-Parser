@@ -2,20 +2,20 @@
   "dataset": "Linux",
   "total_logs_streamed": 600,
   "match_counts": {
-    "exact": 133,
-    "partial": 414,
-    "fuzzy": 52,
-    "new": 1
+    "exact": 119,
+    "partial": 470,
+    "fuzzy": 11,
+    "new": 0
   },
-  "retrieval_accuracy": 0.9983,
-  "exact_rate": 0.2217,
-  "partial_rate": 0.69,
-  "fuzzy_rate": 0.0867,
-  "new_template_rate": 0.0017,
-  "new_templates_discovered": 1,
+  "retrieval_accuracy": 1.0,
+  "exact_rate": 0.1983,
+  "partial_rate": 0.7833,
+  "fuzzy_rate": 0.0183,
+  "new_template_rate": 0.0,
+  "new_templates_discovered": 0,
   "final_store_size": 73,
-  "avg_latency_ms": 47.64,
-  "p95_latency_ms": 101.676,
-  "throughput_logs_per_sec": 21.0,
-  "avg_top1_score": 0.9299
+  "avg_latency_ms": 27.176,
+  "p95_latency_ms": 38.611,
+  "throughput_logs_per_sec": 36.8,
+  "avg_top1_score": 0.9365
 }

@@ -2,20 +2,20 @@
   "dataset": "Zookeeper",
   "total_logs_streamed": 600,
   "match_counts": {
-    "exact": 542,
-    "partial": 58,
+    "exact": 551,
+    "partial": 49,
     "fuzzy": 0,
     "new": 0
   },
   "retrieval_accuracy": 1.0,
-  "exact_rate": 0.9033,
-  "partial_rate": 0.0967,
+  "exact_rate": 0.9183,
+  "partial_rate": 0.0817,
   "fuzzy_rate": 0.0,
   "new_template_rate": 0.0,
   "new_templates_discovered": 0,
   "final_store_size": 54,
-  "avg_latency_ms": 42.044,
-  "p95_latency_ms": 97.774,
-  "throughput_logs_per_sec": 23.8,
-  "avg_top1_score": 0.9973
+  "avg_latency_ms": 20.756,
+  "p95_latency_ms": 23.032,
+  "throughput_logs_per_sec": 48.2,
+  "avg_top1_score": 0.9982
 }

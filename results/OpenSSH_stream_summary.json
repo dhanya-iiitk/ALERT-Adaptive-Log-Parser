@@ -2,20 +2,20 @@
   "dataset": "OpenSSH",
   "total_logs_streamed": 600,
   "match_counts": {
-    "exact": 310,
-    "partial": 257,
+    "exact": 343,
+    "partial": 224,
     "fuzzy": 33,
     "new": 0
   },
   "retrieval_accuracy": 1.0,
-  "exact_rate": 0.5167,
-  "partial_rate": 0.4283,
+  "exact_rate": 0.5717,
+  "partial_rate": 0.3733,
   "fuzzy_rate": 0.055,
   "new_template_rate": 0.0,
   "new_templates_discovered": 0,
   "final_store_size": 15,
-  "avg_latency_ms": 38.304,
-  "p95_latency_ms": 94.469,
-  "throughput_logs_per_sec": 26.1,
-  "avg_top1_score": 0.9571
+  "avg_latency_ms": 11.403,
+  "p95_latency_ms": 14.84,
+  "throughput_logs_per_sec": 87.7,
+  "avg_top1_score": 0.9596
 }
