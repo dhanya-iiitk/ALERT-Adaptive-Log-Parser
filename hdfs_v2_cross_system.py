@@ -14,7 +14,7 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Load HDFS_v2 logs
-with open('/tmp/HDFS_v2_normalised.txt') as f:
+with open('datasets/HDFS_v2_normalised.txt') as f:
     logs = [l.strip() for l in f if l.strip()]
 print(f"Loaded {len(logs)} HDFS_v2 logs")
 
@@ -71,6 +71,7 @@ for ds in datasets:
     new     = 0
     scores  = []
 
+    exact = partial = fuzzy = 0
     for log, emb in zip(logs, embeddings):
         first_kw   = log.split()[0].lower() if log.split() else ''
         candidates = [t for t in store
@@ -81,16 +82,26 @@ for ds in datasets:
         best = max(hybrid_score(emb, log, t, alpha=0.7)
                    for t in candidates)
         scores.append(best)
-        if best >= TAU_NEW:
-            matched += 1
+        if best >= 0.99:
+            exact += 1; matched += 1
+        elif best >= 0.80:
+            partial += 1; matched += 1
+        elif best >= TAU_NEW:
+            fuzzy += 1; matched += 1
         else:
             new += 1
 
     results[ds] = {
         'matched':    matched,
+        'exact':      exact,
+        'partial':    partial,
+        'fuzzy':      fuzzy,
         'new':        new,
         'total':      len(logs),
         'match_rate': matched/len(logs),
+        'exact_rate': exact/len(logs),
+        'partial_rate': partial/len(logs),
+        'fuzzy_rate': fuzzy/len(logs),
         'new_rate':   new/len(logs),
         'mean_score': float(np.mean(scores)),
     }

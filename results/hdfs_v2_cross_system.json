@@ -1,130 +1,226 @@
 {
   "HDFS": {
+    "matched": 18,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 18,
+    "new": 273,
+    "total": 291,
+    "match_rate": 0.061855670103092786,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.061855670103092786,
+    "new_rate": 0.9381443298969072,
+    "mean_score": 0.5205905700726478
+  },
+  "Hadoop": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.3968189485507071
-  },
-  "Hadoop": {
-    "matched": 16,
-    "new": 275,
-    "total": 291,
-    "match_rate": 0.054982817869415807,
-    "new_rate": 0.9450171821305842,
-    "mean_score": 0.4024935950066161
+    "mean_score": 0.42991952048319654
   },
   "Spark": {
-    "matched": 1,
-    "new": 290,
+    "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
+    "new": 291,
     "total": 291,
-    "match_rate": 0.003436426116838488,
-    "new_rate": 0.9965635738831615,
-    "mean_score": 0.3523978181521178
+    "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.38416903185582113
   },
   "Zookeeper": {
-    "matched": 1,
-    "new": 290,
+    "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
+    "new": 291,
     "total": 291,
-    "match_rate": 0.003436426116838488,
-    "new_rate": 0.9965635738831615,
-    "mean_score": 0.2816505752674232
+    "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
+    "new_rate": 1.0,
+    "mean_score": 0.27753227662272917
   },
   "BGL": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.3339808205969454
+    "mean_score": 0.3208355665297241
   },
   "HPC": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.2863178549382389
+    "mean_score": 0.2581303895093841
   },
   "Thunderbird": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.2988997145315689
+    "mean_score": 0.3241690045146208
   },
   "Windows": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.2828161913723339
+    "mean_score": 0.28399205213731343
   },
   "Linux": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.3005622581656318
+    "mean_score": 0.3321704542479693
   },
   "Android": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.2704648575760731
+    "mean_score": 0.2824124147814482
   },
   "HealthApp": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.25252194832636554
+    "mean_score": 0.2643675795348761
   },
   "Apache": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.18852138403623964
+    "mean_score": 0.18580514768911002
   },
   "Proxifier": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.24178375691959264
+    "mean_score": 0.23102297792471677
   },
   "OpenSSH": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.20675094850255524
+    "mean_score": 0.21330106212250022
   },
   "OpenStack": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.26623585336468325
+    "mean_score": 0.29723093669930634
   },
   "Mac": {
     "matched": 0,
+    "exact": 0,
+    "partial": 0,
+    "fuzzy": 0,
     "new": 291,
     "total": 291,
     "match_rate": 0.0,
+    "exact_rate": 0.0,
+    "partial_rate": 0.0,
+    "fuzzy_rate": 0.0,
     "new_rate": 1.0,
-    "mean_score": 0.2949701698556277
+    "mean_score": 0.3324353834567958
   }
 }
