@@ -1,0 +1,226 @@
+{
+  "HDFS": {
+    "drain": {
+      "GA": 0.995,
+      "lat_ms": 0.0021
+    },
+    "spell": {
+      "GA": 0.575,
+      "lat_ms": 0.0904
+    },
+    "alert": {
+      "GA": 0.68,
+      "lat_ms": 32.4
+    }
+  },
+  "Hadoop": {
+    "drain": {
+      "GA": 1.0,
+      "lat_ms": 0.0022
+    },
+    "spell": {
+      "GA": 1.0,
+      "lat_ms": 1.0762
+    },
+    "alert": {
+      "GA": 1.0,
+      "lat_ms": 32.4
+    }
+  },
+  "Spark": {
+    "drain": {
+      "GA": 0.9817,
+      "lat_ms": 0.0021
+    },
+    "spell": {
+      "GA": 0.9817,
+      "lat_ms": 0.2869
+    },
+    "alert": {
+      "GA": 0.9817,
+      "lat_ms": 32.4
+    }
+  },
+  "Zookeeper": {
+    "drain": {
+      "GA": 0.9667,
+      "lat_ms": 0.002
+    },
+    "spell": {
+      "GA": 0.9283,
+      "lat_ms": 0.2825
+    },
+    "alert": {
+      "GA": 0.8083,
+      "lat_ms": 32.4
+    }
+  },
+  "BGL": {
+    "drain": {
+      "GA": 0.745,
+      "lat_ms": 0.0019
+    },
+    "spell": {
+      "GA": 0.6733,
+      "lat_ms": 1.1007
+    },
+    "alert": {
+      "GA": 0.5567,
+      "lat_ms": 32.4
+    }
+  },
+  "HPC": {
+    "drain": {
+      "GA": 0.8217,
+      "lat_ms": 0.0013
+    },
+    "spell": {
+      "GA": 0.8217,
+      "lat_ms": 0.2384
+    },
+    "alert": {
+      "GA": 0.7483,
+      "lat_ms": 32.4
+    }
+  },
+  "Thunderbird": {
+    "drain": {
+      "GA": 0.905,
+      "lat_ms": 0.0043
+    },
+    "spell": {
+      "GA": 0.905,
+      "lat_ms": 3.4668
+    },
+    "alert": {
+      "GA": 0.895,
+      "lat_ms": 32.4
+    }
+  },
+  "Windows": {
+    "drain": {
+      "GA": 0.975,
+      "lat_ms": 0.0022
+    },
+    "spell": {
+      "GA": 0.975,
+      "lat_ms": 0.4251
+    },
+    "alert": {
+      "GA": 0.5417,
+      "lat_ms": 32.4
+    }
+  },
+  "Linux": {
+    "drain": {
+      "GA": 0.9883,
+      "lat_ms": 0.0024
+    },
+    "spell": {
+      "GA": 0.8,
+      "lat_ms": 0.1397
+    },
+    "alert": {
+      "GA": 0.175,
+      "lat_ms": 32.4
+    }
+  },
+  "Android": {
+    "drain": {
+      "GA": 0.5083,
+      "lat_ms": 0.0043
+    },
+    "spell": {
+      "GA": 0.555,
+      "lat_ms": 0.744
+    },
+    "alert": {
+      "GA": 0.6367,
+      "lat_ms": 32.4
+    }
+  },
+  "HealthApp": {
+    "drain": {
+      "GA": 0.4433,
+      "lat_ms": 0.0105
+    },
+    "spell": {
+      "GA": 0.5517,
+      "lat_ms": 0.3726
+    },
+    "alert": {
+      "GA": 0.715,
+      "lat_ms": 32.4
+    }
+  },
+  "Apache": {
+    "drain": {
+      "GA": 1.0,
+      "lat_ms": 0.002
+    },
+    "spell": {
+      "GA": 0.5833,
+      "lat_ms": 0.0374
+    },
+    "alert": {
+      "GA": 0.5833,
+      "lat_ms": 32.4
+    }
+  },
+  "Proxifier": {
+    "drain": {
+      "GA": 0.5017,
+      "lat_ms": 0.0022
+    },
+    "spell": {
+      "GA": 0.9017,
+      "lat_ms": 0.0678
+    },
+    "alert": {
+      "GA": 0.4767,
+      "lat_ms": 32.4
+    }
+  },
+  "OpenSSH": {
+    "drain": {
+      "GA": 1.0,
+      "lat_ms": 0.0022
+    },
+    "spell": {
+      "GA": 0.375,
+      "lat_ms": 0.1799
+    },
+    "alert": {
+      "GA": 0.0433,
+      "lat_ms": 32.4
+    }
+  },
+  "OpenStack": {
+    "drain": {
+      "GA": 0.3,
+      "lat_ms": 0.0038
+    },
+    "spell": {
+      "GA": 0.2333,
+      "lat_ms": 0.3449
+    },
+    "alert": {
+      "GA": 0.8833,
+      "lat_ms": 32.4
+    }
+  },
+  "Mac": {
+    "drain": {
+      "GA": 0.835,
+      "lat_ms": 0.0032
+    },
+    "spell": {
+      "GA": 0.825,
+      "lat_ms": 3.2136
+    },
+    "alert": {
+      "GA": 0.845,
+      "lat_ms": 32.4
+    }
+  }
+}
